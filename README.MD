@@ -254,6 +254,7 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### 📖 Start Here
 
+- [DPI-AI Framework: Building AI-Ready Nations through Digital Public Infrastructure](https://digitalpublicinfrastructure.ai/) — CDPI vision paper (2026) on embedding AI into DPI via AI Blocks, DPI Workflows, and Public Agents; CC BY 4.0
 - [Digital Public Infrastructure and Development: A World Bank Group Approach](https://documents1.worldbank.org/curated/en/099031025172027713/pdf/P505739-84c5073b-9d40-4b83-a211-98b2263e87dd.pdf) — World Bank Digital Transformation White Paper, Vol. 1 (2025)
 - [The Case for a New Digital Bretton Woods](https://www.bu.edu/gdp/) — Boston University Global Development Policy Center
 - [DPI: A Moonshot for Equitable Growth](https://www.co-develop.net/dpi-moonshot) — Co-Develop Fund, 2022
