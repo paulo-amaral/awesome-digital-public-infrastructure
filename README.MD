@@ -1,6 +1,6 @@
 # Awesome Digital Public Infrastructure 
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md) [![Last Updated](https://img.shields.io/github/last-commit/paulo-amaral/awesome-digital-public-infrastructure)](https://github.com/paulo-amaral/awesome-digital-public-infrastructure/commits/main) [![Latest Release](https://img.shields.io/github/v/release/paulo-amaral/awesome-digital-public-infrastructure?label=release)](https://github.com/paulo-amaral/awesome-digital-public-infrastructure/releases) [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-support-orange?style=flat&logo=buy-me-a-coffee&logoColor=white)](https://www.buymeacoffee.com/paulosecur5)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md) [![Last Updated](https://img.shields.io/github/last-commit/paulo-amaral/awesome-digital-public-infrastructure)](https://github.com/paulo-amaral/awesome-digital-public-infrastructure/commits/main) [![Latest Release](https://img.shields.io/github/v/release/paulo-amaral/awesome-digital-public-infrastructure?label=release)](https://github.com/paulo-amaral/awesome-digital-public-infrastructure/releases)
 
 A list of Digital Public Infrastructure (DPI) and Digital Public Goods (DPG) resources I've found useful — tools, frameworks, country implementations, and things I've learned working in the field.
 
@@ -301,7 +301,7 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 | [ReliefWeb Jobs](https://reliefweb.int/jobs) | Humanitarian and development positions |
 | [UN Careers](https://careers.un.org/) | UN Secretariat and agency roles |
 | [UNICEF Careers](https://www.unicef.org/careers/) | ICT and innovation roles |
-| [ICTworks Job Board](https://www.ictworks.org/category/jobs/) | ICT for development |
+| [ICTworks Job Board](https://www.ictworks.org/tag/jobs/) | ICT for development |
 | [LinkedIn](https://www.linkedin.com/jobs/) | Search: DPI, DPG, GovTech, Digital Transformation |
 
 ### 💰 Fellowships, Grants & Funding

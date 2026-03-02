@@ -19,9 +19,15 @@ https://openfinancebrasil.org.br/*
 https://acceleratorlabs.undp.org/*
 https://guardtime.com/*
 https://www.itu.int/en/ITU-D/Statistics/*
-https://www.undp.org/timor-leste*
-https://www.unicef.org/timorleste*
+https://www.undp.org/*
+https://www.unicef.org/*
 https://www.npci.org.in/*
+https://uidai.gov.in/*
+https://www.afdb.org/*
+
+# SSL certificate errors or persistent connection failures in CI
+https://www.ihris.org/*
+https://www.cpimsglobal.org/*
 
 # Timeouts in CI (intermittent or geo-blocked from GitHub Actions runners)
 https://www.terviseportaal.ee/*
