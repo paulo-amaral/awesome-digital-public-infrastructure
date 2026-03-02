@@ -119,6 +119,8 @@ Software certified by the [Digital Public Goods Alliance](https://digitalpublicg
 | [OpenCRVS](https://www.opencrvs.org/) | Civil registration — births, deaths, marriages | 10+ | MPL 2.0 |
 | [OpenSPP](https://openspp.org/) | Social protection registry built on open standards | — | LGPL 3.0 |
 | [OpenG2P](https://openg2p.org/) | Government-to-person benefit delivery | — | MPL 2.0 |
+| [QuarkID](https://quarkid.org/) | Decentralized identity using W3C DIDs and Verifiable Credentials | — | Apache 2.0 |
+| [DIGIT](https://digit.org/) | Urban governance platform for municipal service delivery | 10+ | MIT |
 
 ### 💳 Payments & Financial Inclusion
 
@@ -152,6 +154,7 @@ Software certified by the [Digital Public Goods Alliance](https://digitalpublicg
 | Solution | What it does | License |
 |----------|-------------|---------|
 | [X-Road](https://x-road.global/) | Data exchange backbone behind Estonia's entire e-government | MIT |
+| [OpenFn](https://www.openfn.org/) | Workflow automation and system interoperability middleware, deployed in 40+ LMICs | LGPL 3.0 |
 | [OpenHIE](https://ohie.org/) | Health information exchange architecture and community | — |
 | [FHIR (HL7)](https://hl7.org/fhir/) | Global standard for healthcare data exchange | — |
 | [KoboToolbox](https://www.kobotoolbox.org/) | Data collection built for humanitarian and development work | GPL |
