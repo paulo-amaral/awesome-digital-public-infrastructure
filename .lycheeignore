@@ -1,0 +1,14 @@
+# URLs to exclude from link checking
+
+# Requires login
+https://www.linkedin.com/*
+
+# Known redirect-heavy or rate-limited domains
+https://www.worldbank.org/*
+https://www.oecd.org/*
+https://www.g20.org/*
+
+# Relative anchors (checked separately)
+../../issues/*
+../../stargazers
+../../commits/*

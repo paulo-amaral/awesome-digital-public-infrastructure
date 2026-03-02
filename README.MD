@@ -1,340 +1,354 @@
-# Awesome Digital Public Infrastructure [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md) [![GitHub Stars](https://img.shields.io/github/stars/YOUR_USERNAME/awesome-digital-public-infrastructure?style=social)](../../stargazers) [![Last Updated](https://img.shields.io/github/last-commit/YOUR_USERNAME/awesome-digital-public-infrastructure)](../../commits/main)
+# Awesome Digital Public Infrastructure [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md) [![Last Updated](https://img.shields.io/github/last-commit/paulo-amaral/awesome-digital-public-infrastructure)](../../commits/main)
 
-> **A curated list of Digital Public Infrastructure (DPI) and Digital Public Goods (DPG) — open-source solutions, frameworks, country stacks, and resources for governments, UN agencies, NGOs, and developers building the next generation of inclusive digital societies.**
+A list of Digital Public Infrastructure (DPI) and Digital Public Goods (DPG) resources I've found useful — tools, frameworks, country implementations, and things I've learned working in the field.
 
-**Digital Public Infrastructure (DPI)** refers to shared digital systems — identity, payments, data exchange — that are open, interoperable, and reusable by governments and the private sector alike. **Digital Public Goods (DPGs)** are open-source software, data, AI models, and content standards that advance the UN Sustainable Development Goals.
+DPI is the shared digital layer a country builds so that identity, payments, and data exchange work for everyone, not just those with access to private services. DPGs are the open-source software and standards that make this possible without locking governments into proprietary systems.
 
-> 🌍 Curated with field experience from UNICEF, UNDP, and real implementations across Asia, the Pacific, and fragile states.  
-> If this list helped you, please ⭐ **star the repo** and share with your network.
+> Built from field work with UNICEF, UNDP, and government teams across Asia, the Pacific, and fragile states.
+> Website: [paulo-amaral.github.io](https://paulo-amaral.github.io/)
 
 ---
 
 ## Contents
 
-- [Why DPI Matters](#why-dpi-matters)
-- [Frameworks & Standards](#frameworks--standards)
-- [Certified DPGs by Domain](#certified-dpgs-by-domain)
-  - [Health](#health)
-  - [Identity & Civil Registration](#identity--civil-registration)
-  - [Payments & Financial Inclusion](#payments--financial-inclusion)
-  - [Education](#education)
-  - [Climate & Environment](#climate--environment)
-  - [Data Exchange & Interoperability](#data-exchange--interoperability)
-  - [Child Protection & Social Protection](#child-protection--social-protection)
-- [Country DPI Stacks](#country-dpi-stacks)
-- [Toolkits & Assessment Frameworks](#toolkits--assessment-frameworks)
-- [Organizations & Communities](#organizations--communities)
-- [Research & Reports](#research--reports)
-- [Courses & Learning](#courses--learning)
-- [Jobs & Opportunities](#jobs--opportunities)
-- [🏕️ Field Notes — Real Implementation Insights](#field-notes--real-implementation-insights)
-- [Contributing](#contributing)
+- [💡 Why DPI Matters](#why-dpi-matters)
+- [📐 Frameworks & Standards](#frameworks--standards)
+- [✅ Certified DPGs by Domain](#certified-dpgs-by-domain)
+  - [🏥 Health](#health)
+  - [🪪 Identity & Civil Registration](#identity--civil-registration)
+  - [💳 Payments & Financial Inclusion](#payments--financial-inclusion)
+  - [🎓 Education](#education)
+  - [🌿 Climate & Environment](#climate--environment)
+  - [🔗 Data Exchange & Interoperability](#data-exchange--interoperability)
+  - [🛡️ Child Protection & Social Protection](#child-protection--social-protection)
+- [🌍 Country DPI Stacks](#country-dpi-stacks)
+- [🧰 Toolkits & Assessment Frameworks](#toolkits--assessment-frameworks)
+- [🏛️ Organizations & Communities](#organizations--communities)
+- [📚 Research & Reports](#research--reports)
+- [🎓 Courses & Learning](#courses--learning)
+- [💼 Jobs & Opportunities](#jobs--opportunities)
+- [🏕️ Field Notes](#field-notes)
+- [🤝 Contributing](#contributing)
 
 ---
 
-## Why DPI Matters
+## 💡 Why DPI Matters
 
-> *"DPI is to the digital economy what roads, electricity, and water are to the physical economy."*  
-> — Co-Develop Fund
+> *"DPI is to the digital economy what roads, electricity, and water are to the physical economy."*
+> Co-Develop Fund
 
-DPI enables countries to:
-- **Deliver services at scale** — India's UPI processes 10B+ monthly transactions
-- **Include the excluded** — MOSIP enables foundational ID for populations without documents
-- **Build once, use many times** — Open, interoperable infrastructure avoids vendor lock-in
-- **Accelerate the SDGs** — DPGs reduce the cost of digital transformation by up to 90%
+Countries with good DPI can deliver services faster, reach more people, and avoid paying license fees to vendors for every new system. Countries without it keep rebuilding the same thing in every ministry.
 
-As of 2025, **over 50 countries** are actively building or scaling DPI components. The DPG ecosystem counts **140+ certified solutions** across health, education, identity, payments, and climate.
+- India's UPI processes over 10 billion payment transactions per month
+- MOSIP gives people a foundational national ID even when they have no other documents
+- Shared infrastructure means you build once and reuse across sectors
+- The DPG model cuts the cost of digital transformation significantly
 
----
-
-## Frameworks & Standards
-
-> Authoritative frameworks that define and guide DPI/DPG development at national and global levels.
-
-- [UNDP Digital Public Goods Standard](https://digitalpublicgoods.net/standard/) — Nine-indicator standard for certifying open-source solutions as Digital Public Goods.
-- [GovStack Reference Architecture](https://www.govstack.global/our-work/technical-specifications/) — Building-block approach for assembling government digital services.
-- [ITU Digital Transformation Framework](https://www.itu.int/en/ITU-D/Pages/default.aspx) — ITU guidelines and metrics for national digital transformation.
-- [OECD Digital Government Policy Framework](https://www.oecd.org/governance/digital-government/oecd-digital-government-policy-framework.htm) — Six dimensions for assessing digital government maturity.
-- [World Bank DPI Framework](https://www.worldbank.org/en/topic/digitaldevelopment) — Policy and investment guidance for national digital infrastructure.
-- [Co-Develop DPI Framework](https://www.co-develop.net/) — Practical guidance for countries designing sovereign, inclusive DPI.
-- [Principles for Digital Development](https://digitalprinciples.org/) — Nine principles adopted by 300+ organizations for technology in development contexts.
-- [DPI Safeguards Framework](https://www.co-develop.net/dpi-safeguards) — Rights-based safeguards for DPI design and deployment.
+As of 2025, over 50 countries are actively building or expanding DPI. The DPG registry lists 140+ certified open-source solutions across health, education, identity, payments, and climate.
 
 ---
 
-## Certified DPGs by Domain
+## 📐 Frameworks & Standards
 
-> Software certified by the [Digital Public Goods Alliance](https://digitalpublicgoods.net/) as open-source Digital Public Goods. All solutions listed are openly licensed and advance at least one SDG.
+The main reference points for anyone working on DPI or evaluating DPGs.
 
-### Health
+- [UNDP Digital Public Goods Standard](https://digitalpublicgoods.net/standard/) — nine criteria a solution must meet to be certified as a DPG
+- [GovStack Reference Architecture](https://www.govstack.global/our-work/technical-specifications/) — a building-block model for assembling government digital services
+- [ITU Digital Transformation Framework](https://www.itu.int/en/ITU-D/Pages/default.aspx) — guidelines and metrics from the ITU for national digital transformation
+- [OECD Digital Government Policy Framework](https://www.oecd.org/governance/digital-government/oecd-digital-government-policy-framework.htm) — six dimensions for assessing how mature a country's digital government is
+- [World Bank DPI Framework](https://www.worldbank.org/en/topic/digitaldevelopment) — policy and investment guidance for national digital infrastructure
+- [Co-Develop DPI Framework](https://www.co-develop.net/) — practical guidance for countries designing their own DPI
+- [Principles for Digital Development](https://digitalprinciples.org/) — nine principles adopted by 300+ organizations working in tech and development
+- [DPI Safeguards Framework](https://www.co-develop.net/dpi-safeguards) — rights-based guidance for DPI design
 
-| Solution | Description | Countries | License |
+---
+
+## ✅ Certified DPGs by Domain
+
+Software certified by the [Digital Public Goods Alliance](https://digitalpublicgoods.net/) as open-source and aligned with at least one SDG.
+
+### 🏥 Health
+
+| Solution | What it does | Countries | License |
 |----------|-------------|-----------|---------|
-| [DHIS2](https://dhis2.org/) | Health information management system — the global standard | 100+ | BSD |
-| [OpenMRS](https://openmrs.org/) | Open medical record system for resource-constrained settings | 40+ | MPL 2.0 |
-| [OpenHIM](http://openhim.org/) | Health interoperability middleware — openHIE reference implementation | — | MPL 2.0 |
-| [iHRIS](https://www.ihris.org/) | Health workforce management and planning system | 20+ | GPL 3.0 |
-| [Bahmni](https://www.bahmni.org/) | Hospital information system for low-resource settings | 50+ | AGPL 3.0 |
+| [DHIS2](https://dhis2.org/) | Health data management — the most widely deployed system in the world | 100+ | BSD |
+| [OpenMRS](https://openmrs.org/) | Medical records for facilities with limited resources | 40+ | MPL 2.0 |
+| [OpenHIM](http://openhim.org/) | Middleware for health data exchange, openHIE reference implementation | — | MPL 2.0 |
+| [iHRIS](https://www.ihris.org/) | Health workforce management and planning | 20+ | GPL 3.0 |
+| [Bahmni](https://www.bahmni.org/) | Hospital information system built for low-resource settings | 50+ | AGPL 3.0 |
 | [OpenELIS](https://openelis-global.org/) | Laboratory information system for public health labs | — | MPL 2.0 |
 
-### Identity & Civil Registration
+### 🪪 Identity & Civil Registration
 
-| Solution | Description | Countries | License |
+| Solution | What it does | Countries | License |
 |----------|-------------|-----------|---------|
-| [MOSIP](https://mosip.io/) | Modular Open Source Identity Platform — foundational national ID | 10+ | MPL 2.0 |
-| [OpenCRVS](https://www.opencrvs.org/) | Civil registration and vital statistics — births, deaths, marriages | 10+ | MPL 2.0 |
-| [OpenSPP](https://openspp.org/) | Social protection platform built on DPI principles | — | LGPL 3.0 |
-| [OpenG2P](https://openg2p.org/) | Government-to-person benefit delivery infrastructure | — | MPL 2.0 |
+| [MOSIP](https://mosip.io/) | Open-source foundational national ID platform | 10+ | MPL 2.0 |
+| [OpenCRVS](https://www.opencrvs.org/) | Civil registration — births, deaths, marriages | 10+ | MPL 2.0 |
+| [OpenSPP](https://openspp.org/) | Social protection registry built on open standards | — | LGPL 3.0 |
+| [OpenG2P](https://openg2p.org/) | Government-to-person benefit delivery | — | MPL 2.0 |
 
-### Payments & Financial Inclusion
+### 💳 Payments & Financial Inclusion
 
-| Solution | Description | Countries | License |
+| Solution | What it does | Countries | License |
 |----------|-------------|-----------|---------|
-| [Mojaloop](https://mojaloop.io/) | Open-source payment platform designed for financial inclusion | 10+ | Apache 2.0 |
-| [OpenG2P](https://openg2p.org/) | G2P payment infrastructure — vouchers, cash transfers, social benefits | — | MPL 2.0 |
-| [Mifos X](https://mifos.org/) | Core banking platform for microfinance institutions | 30+ | MPL 2.0 |
-| [Apache Fineract](https://fineract.apache.org/) | Open core banking platform for financial services providers | — | Apache 2.0 |
+| [Mojaloop](https://mojaloop.io/) | Open payment switch designed for financial inclusion | 10+ | Apache 2.0 |
+| [OpenG2P](https://openg2p.org/) | Cash transfers, vouchers, and social benefit payments | — | MPL 2.0 |
+| [Mifos X](https://mifos.org/) | Core banking for microfinance institutions | 30+ | MPL 2.0 |
+| [Apache Fineract](https://fineract.apache.org/) | Open banking platform for financial services | — | Apache 2.0 |
 
-### Education
+### 🎓 Education
 
-| Solution | Description | Users | License |
+| Solution | What it does | Users | License |
 |----------|-------------|-------|---------|
-| [Moodle](https://moodle.org/) | World's most deployed learning management system | 300M+ | GPL 3.0 |
-| [H5P](https://h5p.org/) | Interactive HTML5 content and applications for learning | — | MIT |
-| [Kolibri](https://learningequality.org/kolibri/) | Offline-capable education platform for underserved communities | — | MIT |
-| [OpenEDX](https://openedx.org/) | Open-source platform powering edX and 100+ national deployments | — | AGPL 3.0 |
-| [Sunbird](https://sunbird.org/) | National digital infrastructure for learning (India's DIKSHA) | 250M+ | MIT |
+| [Moodle](https://moodle.org/) | The most widely deployed learning management system | 300M+ | GPL 3.0 |
+| [H5P](https://h5p.org/) | Interactive content for online learning | — | MIT |
+| [Kolibri](https://learningequality.org/kolibri/) | Works offline, designed for schools with no reliable internet | — | MIT |
+| [OpenEDX](https://openedx.org/) | Powers edX and over 100 national deployments | — | AGPL 3.0 |
+| [Sunbird](https://sunbird.org/) | India's DIKSHA learning platform, open-sourced | 250M+ | MIT |
 
-### Climate & Environment
+### 🌿 Climate & Environment
 
-| Solution | Description | License |
+| Solution | What it does | License |
 |----------|-------------|---------|
-| [OpenClimate](https://openclimate.network/) | Open data infrastructure for climate action transparency | Apache 2.0 |
-| [SEPAL](https://sepal.io/) | FAO platform for geospatial analysis and forest monitoring | MIT |
-| [ODK / OpenDataKit](https://getodk.org/) | Mobile data collection for field monitoring and reporting | Apache 2.0 |
+| [OpenClimate](https://openclimate.network/) | Open data infrastructure for tracking climate action | Apache 2.0 |
+| [SEPAL](https://sepal.io/) | FAO platform for forest monitoring and geospatial analysis | MIT |
+| [ODK](https://getodk.org/) | Mobile data collection for field monitoring | Apache 2.0 |
 
-### Data Exchange & Interoperability
+### 🔗 Data Exchange & Interoperability
 
-| Solution | Description | License |
+| Solution | What it does | License |
 |----------|-------------|---------|
-| [X-Road](https://x-road.global/) | Data exchange layer — backbone of Estonia's e-government | MIT |
+| [X-Road](https://x-road.global/) | Data exchange backbone behind Estonia's entire e-government | MIT |
 | [OpenHIE](https://ohie.org/) | Health information exchange architecture and community | — |
-| [FHIR (HL7)](https://hl7.org/fhir/) | Global standard for healthcare data exchange and interoperability | — |
-| [KoboToolbox](https://www.kobotoolbox.org/) | Data collection platform for humanitarian and development contexts | GPL |
-| [CommCare](https://www.dimagi.com/commcare/) | Mobile data collection for frontline health and social workers | Apache 2.0 |
+| [FHIR (HL7)](https://hl7.org/fhir/) | Global standard for healthcare data exchange | — |
+| [KoboToolbox](https://www.kobotoolbox.org/) | Data collection built for humanitarian and development work | GPL |
+| [CommCare](https://www.dimagi.com/commcare/) | Mobile data collection for frontline health workers | Apache 2.0 |
 
-### Child Protection & Social Protection
+### 🛡️ Child Protection & Social Protection
 
-| Solution | Description | License |
+| Solution | What it does | License |
 |----------|-------------|---------|
-| [Primero](https://www.primero.org/) | Child protection case management (UNICEF, UNHCR, IRC) | AGPL 3.0 |
-| [RapidPro](https://app.rapidpro.io/) | Messaging platform for humanitarian and development programs | AGPL 3.0 |
-| [CPIMS+](https://www.cpimsglobal.org/) | Child protection information management system | AGPL 3.0 |
-| [OpenSRP](https://smartregister.org/) | Smart register platform for community health workers | Apache 2.0 |
+| [Primero](https://www.primero.org/) | Case management for child protection, used by UNICEF, UNHCR, IRC | AGPL 3.0 |
+| [RapidPro](https://app.rapidpro.io/) | Messaging platform for humanitarian programs | AGPL 3.0 |
+| [CPIMS+](https://www.cpimsglobal.org/) | Child protection information management | AGPL 3.0 |
+| [OpenSRP](https://smartregister.org/) | Community health worker register and tracking | Apache 2.0 |
 
 ---
 
-## Country DPI Stacks
+## 🌍 Country DPI Stacks
 
-> Real-world national implementations. Each profile covers DPI components deployed, key challenges, lessons learned, and open-source tools in use.
+Real country implementations with detailed profiles on what they built, what worked, and what didn't.
 
-| Country | Population | DPI Highlights | Status |
-|---------|------------|----------------|--------|
-| 🇮🇳 India | 1.4B | Aadhaar (ID), UPI (Payments), ONDC (Commerce), DigiLocker, ABDM (Health) | [View Profile →](docs/country-profiles/india.md) |
-| 🇪🇪 Estonia | 1.4M | X-Road (Data Exchange), e-Residency, KSI Blockchain, i-Voting | [View Profile →](docs/country-profiles/estonia.md) |
-| 🇧🇷 Brazil | 215M | PIX (Payments), GOV.BR (Identity), Open Finance, Conecte SUS (Health) | [View Profile →](docs/country-profiles/brazil.md) |
-| 🇹🇱 Timor-Leste | 1.3M | CPMIS (Child Protection), e-SISCA (Health), RDTL Digital Services | [View Profile →](docs/country-profiles/timor-leste.md) |
-| 🇰🇪 Kenya | 55M | Huduma Namba (ID), M-Pesa integration, eCitizen portal | *Coming soon* |
-| 🇷🇼 Rwanda | 14M | Irembo portal, National ID, Mobile money ecosystem | *Coming soon* |
-| 🇵🇭 Philippines | 115M | PhilSys (ID), InstaPay, eGovPH portal | *Coming soon* |
-| 🇸🇳 Senegal | 17M | Wari, Orange Money, DER digital inclusion programs | *Coming soon* |
-| 🇫🇯 Fiji | 900K | Digital Fiji strategy, mHealth pilots | *Coming soon* |
+| Country | Population | What they built | Profile |
+|---------|------------|----------------|---------|
+| 🇮🇳 India | 1.4B | Aadhaar, UPI, ONDC, DigiLocker, ABDM | [India](docs/country-profiles/india.md) |
+| 🇪🇪 Estonia | 1.4M | X-Road, e-Residency, KSI Blockchain, i-Voting | [Estonia](docs/country-profiles/estonia.md) |
+| 🇧🇷 Brazil | 215M | PIX, GOV.BR, Open Finance, Conecte SUS | [Brazil](docs/country-profiles/brazil.md) |
+| 🇹🇱 Timor-Leste | 1.3M | CPMIS, e-SISCA, RDTL digital services | [Timor-Leste](docs/country-profiles/timor-leste.md) |
+| 🇰🇪 Kenya | 55M | Huduma Namba, M-Pesa, eCitizen | coming soon |
+| 🇷🇼 Rwanda | 14M | Irembo, National ID, mobile money | coming soon |
+| 🇵🇭 Philippines | 115M | PhilSys, InstaPay, eGovPH | coming soon |
+| 🇸🇳 Senegal | 17M | Wari, Orange Money, DER programs | coming soon |
+| 🇫🇯 Fiji | 900K | Digital Fiji strategy, mHealth pilots | coming soon |
 
-> 💡 **Want to contribute a country profile?** See [CONTRIBUTING.md](CONTRIBUTING.md).
-
----
-
-## Toolkits & Assessment Frameworks
-
-> Practical tools for planning, assessing, and implementing DPI/DPG.
-
-### Digital Readiness & Assessment
-- [ITU ICT Development Index](https://www.itu.int/en/ITU-D/Statistics/Pages/publications/mis/methodology.aspx) — Global benchmark for digital readiness across 167 countries.
-- [OECD Digital Government Index](https://www.oecd.org/governance/digital-government/digital-government-index.htm) — Maturity model across 6 dimensions.
-- [DIAL Digital Investment Framework](https://digitalimpactalliance.org/research/digital-investment-framework/) — How to assess and prioritize DPG investments.
-- [WEF Global Technology Governance Report](https://www.weforum.org/reports/global-technology-governance-report-2021/) — Framework for responsible DPI deployment.
-- [GovStack Digital Readiness Assessment](https://www.govstack.global/) — Country readiness tool for building-block-based DPI.
-
-### Interoperability Frameworks
-- [GovStack Building Blocks Specification](https://govstack.gitbook.io/specification/) — Technical specs for interoperable government services.
-- [OpenHIE Architecture](https://ohie.org/framework/) — Health information exchange reference architecture.
-- [IHE Integration Profiles](https://www.ihe.net/resources/profiles/) — Integration profiles for healthcare interoperability.
-
-### Procurement & Policy
-- [UNICEF Venture Fund Guidance](https://www.unicef.org/innovation/venturefund) — How to fund and scale DPGs in development contexts.
-- [Digital Square Global Goods Maturity Model](https://digitalsquare.org/global-goods-maturity-model) — Maturity framework for health digital tools.
-- [Open Source Policy Guide](https://github.com/OpenSourcePolicyCenter/toolkit) — Policy frameworks for government open-source adoption.
-- [ITU Model Policy on Open Source](https://www.itu.int/) — ITU guidance for national open source policies.
+Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
-## Organizations & Communities
+## 🧰 Toolkits & Assessment Frameworks
 
-> Key actors shaping the global DPI/DPG ecosystem.
+### 📊 Digital Readiness & Assessment
 
-### UN System & Multilaterals
-| Organization | Role |
+- [ITU ICT Development Index](https://www.itu.int/en/ITU-D/Statistics/Pages/publications/mis/methodology.aspx) — benchmarks digital readiness across 167 countries
+- [OECD Digital Government Index](https://www.oecd.org/governance/digital-government/digital-government-index.htm) — maturity model covering six dimensions of digital government
+- [DIAL Digital Investment Framework](https://digitalimpactalliance.org/research/digital-investment-framework/) — helps prioritize DPG investments
+- [WEF Global Technology Governance Report](https://www.weforum.org/reports/global-technology-governance-report-2021/) — framework for responsible DPI deployment
+- [GovStack Digital Readiness Assessment](https://www.govstack.global/) — country readiness tool for building-block-based DPI
+
+### 🔌 Interoperability
+
+- [GovStack Building Blocks Specification](https://govstack.gitbook.io/specification/) — technical specs for interoperable government services
+- [OpenHIE Architecture](https://ohie.org/framework/) — health information exchange reference architecture
+- [IHE Integration Profiles](https://www.ihe.net/resources/profiles/) — integration profiles for healthcare interoperability
+
+### 📋 Procurement & Policy
+
+- [UNICEF Venture Fund Guidance](https://www.unicef.org/innovation/venturefund) — how to fund and scale DPGs in low-income countries
+- [Digital Square Global Goods Maturity Model](https://digitalsquare.org/global-goods-maturity-model) — maturity model for health digital tools
+- [Open Source Policy Guide](https://github.com/OpenSourcePolicyCenter/toolkit) — policy frameworks for government open-source adoption
+- [ITU Model Policy on Open Source](https://www.itu.int/) — ITU guidance for national open-source policies
+
+---
+
+## 🏛️ Organizations & Communities
+
+### 🌐 UN System & Multilaterals
+
+| Organization | What they do |
 |---|---|
-| [Digital Public Goods Alliance (DPGA)](https://digitalpublicgoods.net/) | Multi-stakeholder body defining and certifying DPGs |
-| [UNICEF Office of Innovation](https://www.unicef.org/innovation/) | DPG investment and frontier tech for children |
-| [UNDP Digital](https://www.undp.org/digital) | Digital transformation support in 170+ countries |
-| [ITU](https://www.itu.int/) | UN specialized agency for ICTs |
-| [World Bank Digital Development](https://www.worldbank.org/en/topic/digitaldevelopment) | Financing and TA for digital infrastructure |
-| [UN OICT](https://unite.un.org/) | UN Office of Information and Communications Technology |
+| [Digital Public Goods Alliance (DPGA)](https://digitalpublicgoods.net/) | Defines and certifies DPGs |
+| [UNICEF Office of Innovation](https://www.unicef.org/innovation/) | Funds DPGs and frontier tech for children |
+| [UNDP Digital](https://www.undp.org/digital) | Digital transformation in 170+ countries |
+| [ITU](https://www.itu.int/) | UN agency for ICTs |
+| [World Bank Digital Development](https://www.worldbank.org/en/topic/digitaldevelopment) | Finances digital infrastructure |
+| [UN OICT](https://unite.un.org/) | UN Office of ICT |
 
-### Foundations & Alliances
+### 🤲 Foundations & Alliances
+
 | Organization | Focus |
 |---|---|
-| [Digital Impact Alliance (DIAL)](https://digitalimpactalliance.org/) | Research and convening on digital development |
-| [Digital Square](https://digitalsquare.org/) | Pathfinder Fund for global digital health goods |
-| [Co-Develop Fund](https://www.co-develop.net/) | Philanthropic DPI funding for low-income countries |
-| [Gates Foundation Digital Financial Services](https://www.gatesfoundation.org/our-work/programs/global-growth-and-opportunity/financial-services-for-the-poor) | Financial inclusion through DPI |
+| [Digital Impact Alliance (DIAL)](https://digitalimpactalliance.org/) | Research on digital development |
+| [Digital Square](https://digitalsquare.org/) | Grants for global digital health tools |
+| [Co-Develop Fund](https://www.co-develop.net/) | Philanthropic funding for DPI in low-income countries |
+| [Gates Foundation](https://www.gatesfoundation.org/our-work/programs/global-growth-and-opportunity/financial-services-for-the-poor) | Financial inclusion |
 | [Omidyar Network](https://omidyar.com/) | Investment in DPI and open internet |
-| [Rockefeller Foundation](https://www.rockefellerfoundation.org/) | Digital equity and inclusive DPI |
+| [Rockefeller Foundation](https://www.rockefellerfoundation.org/) | Digital equity |
 
-### Technical Communities
-- [GovStack Community](https://www.govstack.global/) — Technical community for reusable government building blocks.
-- [OpenHIE Community](https://ohie.org/) — Global health information exchange implementers.
-- [Digital Development Forum](https://www.digitaldevelopment.org/) — Community of practice for ICT4D practitioners.
-- [ICTworks](https://www.ictworks.org/) — Knowledge hub for digital development professionals.
+### 💻 Technical Communities
 
----
-
-## Research & Reports
-
-> Foundational papers, impact studies, and policy briefs. Sorted by relevance.
-
-### Must-Read: Foundational
-- [The Case for a New Digital Bretton Woods](https://www.bu.edu/gdp/files/2022/05/GDP_PB_032_FIN.pdf) — Boston University Global Development Policy Center.
-- [DPI: A Moonshot for Equitable Growth](https://www.co-develop.net/dpi-moonshot) — Co-Develop Fund, 2022.
-- [Rethinking Digital Public Infrastructure](https://www3.weforum.org/docs/WEF_Rethinking_Digital_Public_Infrastructure.pdf) — World Economic Forum.
-- [Digital Public Infrastructure and Democracy](https://www.omidyar.com/insights/) — Omidyar Network.
-
-### Impact Evidence
-- [DHIS2: 30 Years of Health Information Infrastructure](https://dhis2.org/impact/) — Country-level impact across 100+ countries.
-- [MOSIP Country Implementations](https://mosip.io/country.php) — National ID deployments across Africa and Asia.
-- [Mojaloop Impact Report](https://mojaloop.io/impact/) — Financial inclusion through open payment infrastructure.
-- [India Stack Impact](https://indiastack.org/) — 1.3B identities, $2T+ in UPI transactions annually.
-
-### Policy Briefs
-- [OECD Going Digital Policy Notes](https://www.oecd.org/going-digital/policy-notes.htm) — Country-specific digital transformation guidance.
-- [AfDB Digital Transformation Strategy](https://www.afdb.org/en/topics-and-sectors/topics/digital-transformation) — Africa digital infrastructure priorities.
-- [G20 DPI Framework](https://www.g20.org/) — G20 presidency DPI commitments and principles.
+- [GovStack Community](https://www.govstack.global/) — people building reusable government building blocks
+- [OpenHIE Community](https://ohie.org/) — health information exchange implementers worldwide
+- [Digital Development Forum](https://www.digitaldevelopment.org/) — ICT4D community of practice
+- [ICTworks](https://www.ictworks.org/) — good resource hub for digital development professionals
 
 ---
 
-## Courses & Learning
+## 📚 Research & Reports
 
-> Free MOOCs, certifications, and structured learning paths for DPI/DPG practitioners.
+### 📖 Start Here
 
-### Free Online Courses
+- [The Case for a New Digital Bretton Woods](https://www.bu.edu/gdp/files/2022/05/GDP_PB_032_FIN.pdf) — Boston University Global Development Policy Center
+- [DPI: A Moonshot for Equitable Growth](https://www.co-develop.net/dpi-moonshot) — Co-Develop Fund, 2022
+- [Rethinking Digital Public Infrastructure](https://www3.weforum.org/docs/WEF_Rethinking_Digital_Public_Infrastructure.pdf) — World Economic Forum
+- [Digital Public Infrastructure and Democracy](https://www.omidyar.com/insights/) — Omidyar Network
+
+### 📈 Impact Evidence
+
+- [DHIS2: 30 Years of Health Information Infrastructure](https://dhis2.org/impact/) — country-level impact across 100+ countries
+- [MOSIP Country Implementations](https://mosip.io/country.php) — national ID deployments across Africa and Asia
+- [Mojaloop Impact Report](https://mojaloop.io/impact/) — financial inclusion through open payments
+- [India Stack Impact](https://indiastack.org/) — 1.3B identities, $2T+ in UPI transactions annually
+
+### 📜 Policy
+
+- [OECD Going Digital Policy Notes](https://www.oecd.org/going-digital/policy-notes.htm) — country-specific digital transformation guidance
+- [AfDB Digital Transformation Strategy](https://www.afdb.org/en/topics-and-sectors/topics/digital-transformation) — Africa's digital infrastructure priorities
+- [G20 DPI Framework](https://www.g20.org/) — G20 DPI commitments and principles
+
+---
+
+## 🎓 Courses & Learning
+
+### 🖥️ Free Courses
+
 | Course | Provider | Level |
 |--------|----------|-------|
-| [DPI Academy](https://www.undp.org/digital/academy) | UNDP | Beginner–Intermediate |
+| [DPI Academy](https://www.undp.org/digital/academy) | UNDP | Beginner to Intermediate |
 | [ITU Academy](https://academy.itu.int/) | ITU | All levels |
-| [DHIS2 Academy](https://dhis2.org/academy/) | DHIS2 | Beginner–Advanced |
+| [DHIS2 Academy](https://dhis2.org/academy/) | DHIS2 | Beginner to Advanced |
 | [GovStack Learning Path](https://www.govstack.global/learning/) | GovStack | Technical |
 | [Digital Principles e-Learning](https://digitalprinciples.org/learn/) | DIAL | Beginner |
 | [ODK Documentation](https://docs.getodk.org/) | ODK | Technical |
 
-### Certifications
-- [ISACA CGEIT](https://www.isaca.org/credentialing/cgeit) — Governance of Enterprise IT (recognized in public sector).
-- [Project DPG Certification](https://digitalpublicgoods.net/) — Understanding the DPG standard and certification process.
+### 🏅 Certifications
+
+- [ISACA CGEIT](https://www.isaca.org/credentialing/cgeit) — governance of enterprise IT, recognized in the public sector
+- [Project DPG Certification](https://digitalpublicgoods.net/) — understanding the DPG standard and certification process
 
 ---
 
-## Jobs & Opportunities
+## 💼 Jobs & Opportunities
 
-> Where to find roles at the intersection of technology, development, and government.
+### 🔍 Where to Look
 
-### Job Boards
-| Platform | Focus |
+| Platform | What's there |
 |----------|-------|
 | [DevNetJobs](https://www.devnetjobs.org/) | International development tech roles |
 | [ReliefWeb Jobs](https://reliefweb.int/jobs) | Humanitarian and development positions |
 | [UN Careers](https://careers.un.org/) | UN Secretariat and agency roles |
-| [UNICEF Careers](https://www.unicef.org/careers/) | ICT, innovation, and DPG roles |
+| [UNICEF Careers](https://www.unicef.org/careers/) | ICT and innovation roles |
 | [ICTworks Job Board](https://www.ictworks.org/category/jobs/) | ICT for development |
-| [LinkedIn #GovTech](https://www.linkedin.com/jobs/) | Search: `DPI`, `DPG`, `GovTech`, `Digital Transformation` |
+| [LinkedIn](https://www.linkedin.com/jobs/) | Search: DPI, DPG, GovTech, Digital Transformation |
 
-### Fellowships, Grants & Funding
-| Opportunity | Who It's For |
+### 💰 Fellowships, Grants & Funding
+
+| Opportunity | Who it's for |
 |-------------|--------------|
-| [UNICEF Venture Fund](https://www.unicef.org/innovation/venturefund) | DPG startups in low-income countries — equity-free funding |
-| [Digital Square Open Calls](https://digitalsquare.org/opencalls) | Grants for global digital health goods |
+| [UNICEF Venture Fund](https://www.unicef.org/innovation/venturefund) | DPG startups in low-income countries, no equity taken |
+| [Digital Square Open Calls](https://digitalsquare.org/opencalls) | Grants for global digital health tools |
 | [DIAL Fellowship](https://digitalimpactalliance.org/get-involved/) | Digital development practitioners |
 | [Co-Develop Country Grants](https://www.co-develop.net/) | Governments implementing DPI |
 
 ---
 
-## 🏕️ Field Notes — Real Implementation Insights
+## 🏕️ Field Notes
 
-> Hard-won lessons from practitioners. Not found in any framework document.
-> *Contributed by practitioners with field experience in UNICEF, UNDP, and national government deployments.*
+Things I learned working in the field that don't appear in any framework document.
 
-### From the Ground: Timor-Leste & Pacific Island States
-Working in fragile states and small island developing states reveals realities no framework covers:
+### 🌴 From Timor-Leste and the Pacific
 
-- **📶 Infrastructure before applications:** In fragile states, lightweight tools like KoboToolbox outperform complex HMIS until reliable network and device capacity exist. Don't let "DPI" ambitions outpace infrastructure reality.
-- **🤝 Ministry buy-in is the bottleneck:** Technical implementation takes weeks. Stakeholder alignment — across ministries, donors, and civil society — takes months. Budget for this explicitly.
-- **🔑 Consistent period identifiers from day one:** Cross-system reporting requires uniform cycle IDs (e.g., `MSSI_2026_q1`) enforced at the data collection layer. Retrofitting later costs 10x more.
-- **📄 Design for PDF too:** Even with digital infrastructure, email + PDF remains the de facto channel for senior government officials. Always design for both channels.
-- **🌊 Pacific context is unique:** With 14 Pacific island nations spread across millions of km², multi-country DPI requires solutions that work offline, across jurisdictions, and with minimal local tech capacity.
+- **📶 Start with what works, not what's ideal.** In fragile states, KoboToolbox running on 3G beats a complex HMIS that needs a reliable server and trained IT staff. Build up from there.
+- **🤝 The technology is the easy part.** Getting four ministries to agree on a common data schema took longer than building the entire pipeline. Budget time for this — seriously.
+- **🔑 Agree on identifiers before you start.** Cycle IDs like `MSSI_2026_q1` need to match across the form, the pipeline, and the reporting logic from day one. Fixing this later is painful and expensive.
+- **📄 Always design for PDF.** Even with a live dashboard, senior government officials will ask for a PDF by email. Both channels need to work.
+- **🌊 The Pacific is not one context.** Fourteen island nations spread across millions of km² means offline-capable tools, cross-jurisdiction data agreements, and very limited local technical capacity. Generic solutions rarely fit.
 
-### Common DPI Pitfalls (Anywhere)
+### ⚠️ Common Mistakes
 
-| Pitfall | What It Looks Like | How to Avoid |
+| What goes wrong | How it looks | How to avoid it |
 |--------|-------------------|--------------|
-| **Vendor lock-in as DPI** | Proprietary "open" solutions with closed APIs | Verify open APIs, exportable data, no proprietary lock |
-| **Digital-first without analog inclusion** | 30-40% of populations lack smartphones | Design for USSD, IVR, and in-person fallback |
-| **Sustainability gaps** | Donor-funded projects with no ops budget | Budget for operations from day one, before features |
-| **Interoperability as afterthought** | Connecting siloed systems post-launch | Start with integration architecture, not features |
-| **Data without governance** | Collecting data without privacy frameworks | Data governance before data collection |
-| **Copying India Stack wholesale** | Assuming one country's DPI fits all contexts | Adapt to local legal, political, and capacity context |
+| **Vendor lock-in as DPI** | "Open" solutions with closed APIs | Check for open APIs and exportable data before you sign anything |
+| **Digital-first, everyone else later** | 30-40% of users have no smartphone | Build for USSD, IVR, and in-person from the start |
+| **No sustainability plan** | System dies when the donor project ends | Budget for operations before features |
+| **Interoperability as an afterthought** | Two systems that can't talk to each other | Design the integration architecture first |
+| **Collecting data without governance** | Data piles up with no privacy framework | Governance before collection |
+| **Copying India Stack** | Assuming what worked at 1.4B scale fits a country of 1.3M | Adapt to local context — legal, political, and capacity |
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
-Contributions are welcome and encouraged! This list grows with input from practitioners, developers, policymakers, and researchers worldwide.
+This list is kept up to date with contributions from people working in government, international organizations, and open-source development. If you know something that should be here, add it.
 
-**To add a resource:**
-1. Read the [Contribution Guidelines](CONTRIBUTING.md)
-2. [Open an issue](../../issues/new/choose) using the **Add Resource** template
-3. Or submit a Pull Request directly
+**How to add a resource:**
+1. Read [CONTRIBUTING.md](CONTRIBUTING.md)
+2. [Open an issue](../../issues/new/choose) using the Add Resource template
+3. Or submit a pull request directly
 
-**What we're looking for:**
-- ✅ Open-source tools with active maintenance
-- ✅ Country implementation case studies
-- ✅ Field notes and practitioner insights
-- ✅ Frameworks from credible international organizations
-- ❌ Proprietary commercial solutions
-- ❌ Inactive or abandoned projects
+**What belongs here:**
+- Open-source tools with active maintenance
+- Country implementation case studies
+- Field notes from real deployments
+- Frameworks from recognized international organizations
+
+**What doesn't:**
+- Proprietary tools, even with a free tier
+- Inactive or abandoned projects
 
 ---
 
 ## License
 
-[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+<div align="center">
 
-To the extent possible under law, the contributors have waived all copyright and related or neighboring rights to this work. See [LICENSE](LICENSE) for details.
+[<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="CC0 1.0 Public Domain" height="36">](https://creativecommons.org/publicdomain/zero/1.0/)
+&nbsp;&nbsp;
+[<img src="https://mirrors.creativecommons.org/presskit/logos/cc.logo.svg" alt="Creative Commons" height="36">](https://creativecommons.org/)
+&nbsp;&nbsp;
+[<img src="https://img.shields.io/badge/Open%20Source-Initiative-3DA639?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="Open Source Initiative" height="36">](https://opensource.org/)
+
+<sub>Content is CC0 — public domain. All software listed is open source. See each project's license for details.</sub>
+
+</div>
 
 ---
 
 <div align="center">
 
-**⭐ If this list helped you, please star it and share with your network ⭐**
+If this list was useful, star it and pass it on.
 
-*Built by practitioners, for practitioners.*
+[paulo-amaral.github.io](https://paulo-amaral.github.io/)
+
+*Made with ❤️ in the 🐊 island*
 
 </div>

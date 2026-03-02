@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awesome Digital Public Infrastructure</title>
+  <meta name="description" content="A curated list of DPI and DPG resources, tools, frameworks, and country implementations." />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --blue:    #1a73e8;
+      --teal:    #00897b;
+      --dark:    #1a1a2e;
+      --light:   #f4f7fb;
+      --border:  #e0e6ef;
+      --text:    #2d3748;
+      --muted:   #718096;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ── HERO ─────────────────────────────────────── */
+    .hero {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      padding: 80px 24px 64px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+    }
+    .hero h1 span { color: #64b5f6; }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 680px;
+      margin: 0 auto 32px;
+      opacity: 0.85;
+    }
+    .hero-badges { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .hero-badges a img { height: 24px; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+    .btn:hover { opacity: .85; }
+    .btn-primary { background: #64b5f6; color: #0f2027; }
+    .btn-outline { border: 2px solid rgba(255,255,255,.5); color: #fff; }
+    .hero-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
+
+    /* ── STATS BAR ─────────────────────────────────── */
+    .stats {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+    }
+    .stats-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat strong { display: block; font-size: 1.8rem; font-weight: 700; color: var(--blue); }
+    .stat span { font-size: 0.85rem; color: var(--muted); }
+
+    /* ── MAIN ──────────────────────────────────────── */
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 i { color: var(--blue); font-size: 1.2rem; }
+
+    /* ── SECTION CARDS ─────────────────────────────── */
+    .section { margin-bottom: 56px; }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow .2s, transform .2s;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,.08);
+      transform: translateY(-2px);
+    }
+    .card-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      color: var(--blue);
+      margin-bottom: 4px;
+    }
+    .card h3 { font-size: 0.95rem; font-weight: 600; }
+    .card p  { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+    .card .tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #e8f0fe;
+      color: var(--blue);
+      align-self: flex-start;
+    }
+
+    /* ── COUNTRY TABLE ─────────────────────────────── */
+    .country-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .country-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow .2s;
+    }
+    .country-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+    .country-card .flag { font-size: 2rem; margin-bottom: 8px; display: block; }
+    .country-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+    .country-card p { font-size: 0.82rem; color: var(--muted); }
+    .country-card .chips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; }
+    .chip {
+      font-size: 0.72rem;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #e0f2f1;
+      color: var(--teal);
+      font-weight: 500;
+    }
+
+    /* ── DOMAIN GRID ───────────────────────────────── */
+    .domain-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 12px;
+    }
+    .domain-pill {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text);
+      transition: background .2s;
+    }
+    .domain-pill:hover { background: var(--blue); color: #fff; }
+    .domain-pill:hover i { color: #fff; }
+    .domain-pill i { display: block; font-size: 1.4rem; color: var(--blue); margin-bottom: 8px; }
+    .domain-pill span { font-size: 0.8rem; font-weight: 500; }
+
+    /* ── FOOTER ────────────────────────────────────── */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,.7);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.85rem;
+    }
+    footer a { color: #64b5f6; text-decoration: none; }
+    footer .heart { color: #e53e3e; }
+    footer .croc  { font-size: 1.1rem; }
+  </style>
+</head>
+<body>
+
+<!-- ── HERO ─────────────────────────────────────────── -->
+<header class="hero">
+  <h1><i class="fa-solid fa-network-wired"></i> Awesome <span>Digital Public Infrastructure</span></h1>
+  <p>A curated list of DPI and DPG resources — open-source solutions, frameworks, country stacks, and field-tested insights for governments, UN agencies, NGOs, and developers.</p>
+  <div class="hero-badges">
+    <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
+    <a href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure/blob/main/CONTRIBUTING.md">
+      <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg" alt="Contributions Welcome" />
+    </a>
+  </div>
+  <div class="hero-cta">
+    <a class="btn btn-primary" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure">
+      <i class="fa-brands fa-github"></i> View on GitHub
+    </a>
+    <a class="btn btn-outline" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure/issues/new/choose">
+      <i class="fa-solid fa-plus"></i> Add Resource
+    </a>
+  </div>
+</header>
+
+<!-- ── STATS ─────────────────────────────────────────── -->
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat"><strong>140+</strong><span>Certified DPGs</span></div>
+    <div class="stat"><strong>50+</strong><span>Countries building DPI</span></div>
+    <div class="stat"><strong>4</strong><span>Country deep-dives</span></div>
+    <div class="stat"><strong>8</strong><span>Domains covered</span></div>
+  </div>
+</div>
+
+<!-- ── MAIN ──────────────────────────────────────────── -->
+<main>
+
+  <!-- DOMAINS -->
+  <section class="section">
+    <h2><i class="fa-solid fa-layer-group"></i> DPG Domains</h2>
+    <div class="domain-grid">
+      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-health">
+        <i class="fa-solid fa-heart-pulse"></i><span>Health</span>
+      </a>
+      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#%EF%A3%BF-identity--civil-registration">
+        <i class="fa-solid fa-id-card"></i><span>Identity</span>
+      </a>
+      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-payments--financial-inclusion">
+        <i class="fa-solid fa-credit-card"></i><span>Payments</span>
+      </a>
+      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-education">
+        <i class="fa-solid fa-graduation-cap"></i><span>Education</span>
+      </a>
+      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-climate--environment">
+        <i class="fa-solid fa-leaf"></i><span>Climate</span>
+      </a>
+      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-data-exchange--interoperability">
+        <i class="fa-solid fa-arrows-rotate"></i><span>Data Exchange</span>
+      </a>
+      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#%EF%B8%8F-child-protection--social-protection">
+        <i class="fa-solid fa-shield-halved"></i><span>Social Protection</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- COUNTRY PROFILES -->
+  <section class="section">
+    <h2><i class="fa-solid fa-earth-asia"></i> Country DPI Profiles</h2>
+    <div class="country-grid">
+      <a class="country-card" href="country-profiles/india.md">
+        <span class="flag">🇮🇳</span>
+        <h3>India</h3>
+        <p>The world's most comprehensive DPI stack at 1.4B scale.</p>
+        <div class="chips">
+          <span class="chip">Aadhaar</span>
+          <span class="chip">UPI</span>
+          <span class="chip">ONDC</span>
+          <span class="chip">ABDM</span>
+        </div>
+      </a>
+      <a class="country-card" href="country-profiles/estonia.md">
+        <span class="flag">🇪🇪</span>
+        <h3>Estonia</h3>
+        <p>World's most advanced digital society — X-Road, e-Residency, i-Voting.</p>
+        <div class="chips">
+          <span class="chip">X-Road</span>
+          <span class="chip">e-Residency</span>
+          <span class="chip">KSI</span>
+        </div>
+      </a>
+      <a class="country-card" href="country-profiles/brazil.md">
+        <span class="flag">🇧🇷</span>
+        <h3>Brazil</h3>
+        <p>PIX reached 100M users faster than any payment system in history.</p>
+        <div class="chips">
+          <span class="chip">PIX</span>
+          <span class="chip">GOV.BR</span>
+          <span class="chip">Open Finance</span>
+        </div>
+      </a>
+      <a class="country-card" href="country-profiles/timor-leste.md">
+        <span class="flag">🇹🇱</span>
+        <h3>Timor-Leste</h3>
+        <p>DPI in a fragile state — CPMIS, KoboToolbox pipelines, UNICEF partnership.</p>
+        <div class="chips">
+          <span class="chip">CPMIS</span>
+          <span class="chip">KoboToolbox</span>
+          <span class="chip">UNICEF</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- QUICK LINKS -->
+  <section class="section">
+    <h2><i class="fa-solid fa-compass"></i> Quick Links</h2>
+    <div class="card-grid">
+      <a class="card" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-frameworks--standards">
+        <div class="card-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+        <h3>Frameworks & Standards</h3>
+        <p>UNDP DPG Standard, GovStack, ITU, OECD, World Bank, Co-Develop.</p>
+        <span class="tag">7 resources</span>
+      </a>
+      <a class="card" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-toolkits--assessment-frameworks">
+        <div class="card-icon"><i class="fa-solid fa-toolbox"></i></div>
+        <h3>Toolkits & Assessment</h3>
+        <p>Digital readiness tools, interoperability frameworks, procurement guides.</p>
+        <span class="tag">10 resources</span>
+      </a>
+      <a class="card" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-organizations--communities">
+        <div class="card-icon"><i class="fa-solid fa-building-columns"></i></div>
+        <h3>Organizations</h3>
+        <p>DPGA, UNICEF, UNDP, DIAL, Digital Square, Co-Develop, and more.</p>
+        <span class="tag">15+ orgs</span>
+      </a>
+      <a class="card" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-research--reports">
+        <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
+        <h3>Research & Reports</h3>
+        <p>Foundational papers, impact studies, policy briefs from leading institutions.</p>
+        <span class="tag">10+ papers</span>
+      </a>
+      <a class="card" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-courses--learning">
+        <div class="card-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+        <h3>Courses & Learning</h3>
+        <p>Free MOOCs, certifications, and learning paths for DPI/DPG practitioners.</p>
+        <span class="tag">8 courses</span>
+      </a>
+      <a class="card" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-jobs--opportunities">
+        <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+        <h3>Jobs & Funding</h3>
+        <p>Job boards, fellowships, and grants at the intersection of tech and development.</p>
+        <span class="tag">10+ links</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FIELD NOTES TEASER -->
+  <section class="section">
+    <h2><i class="fa-solid fa-campground"></i> Field Notes</h2>
+    <div style="background:#fff;border:1px solid var(--border);border-radius:12px;padding:24px;">
+      <p style="font-size:0.95rem;margin-bottom:16px;">
+        Hard-won lessons from real DPI implementations — not found in any framework document.
+        Contributed by practitioners with field experience in UNICEF, UNDP, and national government deployments.
+      </p>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+        <li><i class="fa-solid fa-wifi" style="color:var(--blue);width:20px;"></i> <strong>Infrastructure before applications</strong> — lightweight tools outperform complex HMIS in fragile states.</li>
+        <li><i class="fa-solid fa-handshake" style="color:var(--blue);width:20px;"></i> <strong>Ministry buy-in is the bottleneck</strong> — stakeholder alignment takes months, not weeks.</li>
+        <li><i class="fa-solid fa-key" style="color:var(--blue);width:20px;"></i> <strong>Consistent identifiers from day one</strong> — cycle ID mismatches break cross-system reporting.</li>
+        <li><i class="fa-solid fa-file-pdf" style="color:var(--blue);width:20px;"></i> <strong>Design for PDF too</strong> — email + PDF remains the de facto channel for senior officials.</li>
+      </ul>
+      <a href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#%EF%B8%8F-field-notes--real-implementation-insights"
+         style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;color:var(--blue);font-weight:600;text-decoration:none;font-size:0.9rem;">
+        Read all field notes <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTRIBUTE -->
+  <section class="section" style="text-align:center;">
+    <h2 style="justify-content:center;"><i class="fa-solid fa-code-pull-request"></i> Contribute</h2>
+    <p style="max-width:560px;margin:0 auto 24px;color:var(--muted);">
+      Know a DPG, framework, or implementation that should be here? Open an issue or submit a pull request.
+    </p>
+    <a class="btn btn-primary" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure/issues/new/choose">
+      <i class="fa-solid fa-plus"></i> Add a Resource
+    </a>
+  </section>
+
+</main>
+
+<!-- ── FOOTER ─────────────────────────────────────────── -->
+<footer>
+  <p>
+    Made with <span class="heart">❤️</span> in the <span class="croc">🐊</span> island &nbsp;·&nbsp;
+    <a href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure">GitHub</a> &nbsp;·&nbsp;
+    <a href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure/blob/main/CONTRIBUTING.md">Contribute</a> &nbsp;·&nbsp;
+    <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 License</a>
+  </p>
+  <p style="margin-top:8px;font-size:0.78rem;opacity:.6;">
+    <i class="fa-brands fa-font-awesome"></i> Icons by Font Awesome &nbsp;·&nbsp;
+    <i class="fa-solid fa-check-double"></i> DPGs certified by <a href="https://digitalpublicgoods.net">DPGA</a>
+  </p>
+</footer>
+
+</body>
+</html>

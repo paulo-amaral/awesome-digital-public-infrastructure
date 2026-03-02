@@ -1,4 +1,4 @@
-name: CI — Link Checker
+name: CI
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main]
   schedule:
-    # Run weekly on Mondays at 08:00 UTC
+    # Weekly on Mondays at 08:00 UTC
     - cron: "0 8 * * 1"
   workflow_dispatch:
 
@@ -17,28 +17,32 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run lychee link checker
+      - name: Run lychee
+        id: lychee
         uses: lycheeverse/lychee-action@v1
         with:
+          # Exclusions are read from .lycheeignore
           args: >
             --verbose
             --no-progress
             --timeout 30
             --max-retries 3
+            --retry-wait-time 2
             --exclude-mail
-            --exclude "https://localhost"
-            --exclude "https://example.com"
-            --exclude "https://www.linkedin.com"
-            README.md
+            --exclude-loopback
+            --accept 200,206,429
+            README.MD
             CONTRIBUTING.md
+            DEVELOPMENT.md
             docs/**/*.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create issue on link failure
-        if: failure()
+      - name: Open issue on scheduled failure
+        if: failure() && github.event_name == 'schedule'
         uses: peter-evans/create-issue-from-file@v5
         with:
-          title: "Broken links detected"
+          title: "Weekly check: broken links found"
           content-filepath: ./lychee/out.md
           labels: broken-link, maintenance
+          assignees: paulo-amaral
