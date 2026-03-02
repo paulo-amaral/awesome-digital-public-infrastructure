@@ -275,6 +275,10 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 - [AfDB Digital Transformation Strategy](https://www.afdb.org/en/topics-and-sectors/topics/digital-transformation) — Africa's digital infrastructure priorities
 - [G20 DPI Framework](https://www.g20.org/) — G20 DPI commitments and principles
 
+### 👩‍💻 Digital Workforce & Inclusion
+
+- [Where is Digital Youth Work? Policy Invisibility and the Case for Recognition](https://dywrhubreport2026.netlify.app/) — University of Leeds / INCLUDE+ Network (2026); reviews 800+ government bodies and 26 policies to show how youth workers — the most effective digital inclusion practitioners — are systematically excluded from policy and funding
+
 ---
 
 ## 🎓 Courses & Learning
