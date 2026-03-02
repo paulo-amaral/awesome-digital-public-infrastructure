@@ -28,7 +28,6 @@ DPI is the shared digital layer a country builds so that identity, payments, and
 - [🏛️ Organizations & Communities](#organizations--communities)
 - [📚 Research & Reports](#research--reports)
 - [🎓 Courses & Learning](#courses--learning)
-- [💼 Jobs & Opportunities](#jobs--opportunities)
 - [🏕️ Field Notes](#field-notes)
 - [🤝 Contributing](#contributing)
 
@@ -258,7 +257,7 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 - [The Agentic State: Rethinking Government for the Era of Agentic AI](https://agenticstate.org/) — vision paper (2025, Global GovTech Centre / World Bank) covering AI in public services, workflows, procurement, governance, and crisis response; launched at Tallinn Digital Summit
 - [Digital Public Infrastructure and Development: A World Bank Group Approach](https://documents1.worldbank.org/curated/en/099031025172027713/pdf/P505739-84c5073b-9d40-4b83-a211-98b2263e87dd.pdf) — World Bank Digital Transformation White Paper, Vol. 1 (2025)
 - [The Case for a New Digital Bretton Woods](https://www.bu.edu/gdp/) — Boston University Global Development Policy Center
-- [DPI: A Moonshot for Equitable Growth](https://www.co-develop.net/dpi-moonshot) — Co-Develop Fund, 2022
+- [The Economics of Digital Public Infrastructure](https://dial.global/research/economics-of-digital-public-infrastructure/) — DIAL / Co-Develop research on DPI's economic case for equitable growth
 - [Rethinking Digital Public Infrastructure](https://www3.weforum.org/docs/WEF_Rethinking_Digital_Public_Infrastructure.pdf) — World Economic Forum
 - [Digital Public Infrastructure and Democracy](https://omidyarnetwork.com/) — Omidyar Network
 
@@ -298,30 +297,6 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 - [ISACA CGEIT](https://www.isaca.org/credentialing/cgeit) — governance of enterprise IT, recognized in the public sector
 - [Project DPG Certification](https://digitalpublicgoods.net/) — understanding the DPG standard and certification process
-
----
-
-## 💼 Jobs & Opportunities
-
-### 🔍 Where to Look
-
-| Platform | What's there |
-|----------|-------|
-| [DevNetJobs](https://www.devnetjobs.org/) | International development tech roles |
-| [ReliefWeb Jobs](https://reliefweb.int/jobs) | Humanitarian and development positions |
-| [UN Careers](https://careers.un.org/) | UN Secretariat and agency roles |
-| [UNICEF Careers](https://www.unicef.org/careers/) | ICT and innovation roles |
-| [ICTworks Job Board](https://www.ictworks.org/tag/jobs/) | ICT for development |
-| [LinkedIn](https://www.linkedin.com/jobs/) | Search: DPI, DPG, GovTech, Digital Transformation |
-
-### 💰 Fellowships, Grants & Funding
-
-| Opportunity | Who it's for |
-|-------------|--------------|
-| [UNICEF Venture Fund](https://www.unicef.org/innovation/venturefund) | DPG startups in low-income countries, no equity taken |
-| [Digital Square Open Calls](https://digitalsquare.org/opencalls) | Grants for global digital health tools |
-| [DIAL Fellowship](https://dial.global/) | Digital development practitioners |
-| [Co-Develop Country Grants](https://www.co-develop.net/) | Governments implementing DPI |
 
 ---
 
