@@ -332,11 +332,18 @@ Things I learned working in the field that don't appear in any framework documen
 - **🛤️ User journeys are your north star.** Walk the full journey for each persona — focal point, programme officer, ministry director. Build the to-be journey first. Every technical decision should trace back to it.
 - **🏗️ TOGAF keeps the architecture conversation honest.** Even a lightweight pass through the ADM layers — Business → Data → Application → Technology — stops teams jumping straight to tools. It forces alignment on *what problem* you are solving before anyone debates *which platform* to use.
 
-### 📵 Offline-First & Connectivity
+### 📵 Offline-First & Last Mile
 
 - **Design offline-first, not offline-compatible.** There is a difference. Offline-compatible means someone added a sync button after launch. Offline-first means every interaction was designed assuming no connectivity — data queues locally, conflicts are resolved deterministically, and the user never sees a spinner. In fragile and rural contexts, this is the baseline, not an edge case.
-- **Connectivity is political, not just technical.** In many countries, the last-mile internet problem is known, budgeted for, and still unresolved after a decade. Do not wait for infrastructure to catch up. Design your DPI components to degrade gracefully: offline collection, async sync, SMS fallback, paper backup. The system that works on 2G today beats the one planned for fibre in 2030.
-- **Test on the actual device, not your laptop.** A form that loads in 2 seconds on Chrome degrades to 45 seconds on a shared Android 8 phone in a municipality office. Test on the hardware your users actually have, in the connectivity conditions they actually face.
+- **The last-mile problem is not a technical problem.** In most countries it is already known, costed, and budgeted — and still unresolved after a decade because the economics do not work for private operators and the political will for public investment is absent. Do not design DPI that depends on last-mile connectivity being solved first. Degrade gracefully: offline collection, async sync, SMS fallback, paper backup. The system that works on 2G today delivers more value than the one waiting for fibre in 2030.
+- **Test on the actual device.** A form that loads in 2 seconds on Chrome degrades to 45 seconds on a shared Android 8 phone in a municipal office. Test on the hardware your users actually have, in the connectivity conditions they actually face. This single practice eliminates more UX problems than any amount of user research done remotely.
+
+### ⚖️ Digital Divide, AI Divide & Inclusion
+
+- **The digital divide is not disappearing — it is replicating.** As foundational DPI (identity, payments, data exchange) becomes standard, a second layer of exclusion is forming around those who cannot use it: people without smartphones, without literacy, without the time or trust to engage with digital systems. DPI design that ignores this layer does not solve the divide — it moves the cutoff point.
+- **The AI divide is the digital divide at speed.** Countries and communities that lack clean, structured, governed data will not be able to use AI-enhanced public services — not because they lack AI, but because AI requires data infrastructure that takes years to build. If DPI is not deployed with data quality and governance as first-class concerns, the AI divide widens with every model release.
+- **Gender is a design variable, not a disclaimer.** Women in many low-income contexts have lower mobile ownership rates, lower literacy rates, and face social constraints on independent digital access. A DPI system that is nominally accessible but practically unusable for half the population is not a success. Collect disaggregated data by gender from day one. Run user research with women separately. Design for the constrained case.
+- **Disability and language are not edge cases.** In Pacific and Southeast Asian contexts, populations speak dozens of languages, including languages with no digital keyboard support. Screen readers are rare. Form logic that requires reading long instructions excludes a significant share of users. Build with the hardest-to-reach user in mind — everyone else is easier.
 
 ### 🌐 Emerging Technologies
 
