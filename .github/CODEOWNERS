@@ -1,0 +1,11 @@
+# CODEOWNERS
+# All files default to paulo-amaral.
+# Add domain experts as co-owners for specific sections as the project grows.
+
+# Default owner for everything
+*                               @paulo-amaral
+
+# Security-sensitive files — require explicit review
+SECURITY.md                     @paulo-amaral
+.github/workflows/              @paulo-amaral
+.lycheeignore                   @paulo-amaral

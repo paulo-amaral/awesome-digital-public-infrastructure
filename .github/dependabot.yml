@@ -1,0 +1,22 @@
+version: 2
+
+updates:
+  # Keep GitHub Actions up to date
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "08:00"
+      timezone: "Asia/Dili"
+    commit-message:
+      prefix: "ci"
+    reviewers:
+      - "paulo-amaral"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    # Only patch and minor updates — major version bumps require manual review
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
