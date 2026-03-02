@@ -11,6 +11,9 @@ https://www.oecd.org/*
 https://www.g20.org/*
 
 # Bot-blocking — return 403/401 in CI but work in a browser
+https://omidyar.com/*
+https://omidyarnetwork.com/*
+https://smartafrica.org/*
 https://www.weforum.org/*
 https://www3.weforum.org/*
 https://abdm.gov.in/*
