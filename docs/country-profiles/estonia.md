@@ -14,9 +14,9 @@ Estonia's model is uniquely exportable: X-Road has been adopted by Finland, Icel
 | Data Exchange | [X-Road](https://x-road.global/) | 2001 | Yes (MIT) |
 | e-Residency | [e-Residency](https://e-resident.gov.ee/) | 2014 | No |
 | Blockchain Audit | [KSI Blockchain](https://guardtime.com/technology) | 2012 | Specifications open |
-| Digital Voting | [i-Voting](https://www.valimised.ee/en/internet-voting) | 2005 | Yes |
+| Digital Voting | [i-Voting](https://www.valimised.ee/en/) | 2005 | Yes |
 | Health Records | [Terviseportaal](https://www.terviseportaal.ee/) | 2008 | Partial |
-| Business Registry | [e-Business Register](https://www.rik.ee/en/e-business-register) | 2000 | No |
+| Business Registry | [e-Business Register](https://www.rik.ee/en/) | 2000 | No |
 
 ## Open-Source Tools
 

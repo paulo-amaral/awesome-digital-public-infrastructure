@@ -8,7 +8,34 @@ https://www.worldbank.org/*
 https://www.oecd.org/*
 https://www.g20.org/*
 
-# Relative anchors (checked separately)
+# Bot-blocking — return 403/401 in CI but work in a browser
+https://www.weforum.org/*
+https://www3.weforum.org/*
+https://abdm.gov.in/*
+https://agriwelfare.gov.in/*
+https://openfinancebrasil.org.br/*
+https://acceleratorlabs.undp.org/*
+https://guardtime.com/*
+https://www.itu.int/en/ITU-D/Statistics/*
+https://www.undp.org/timor-leste*
+https://www.unicef.org/timorleste*
+https://www.npci.org.in/*
+
+# Timeouts in CI (intermittent or geo-blocked from GitHub Actions runners)
+https://www.terviseportaal.ee/*
+https://e-resident.gov.ee/*
+https://conectesus.saude.gov.br/*
+
+# Intermittently unreachable or suspended government sites
+https://www.co-develop.net/*
+https://www.mssi.gov.tl/*
+https://www.moh.gov.tl/*
+https://www.rdtl.tl/*
+
+# AU document server returns 500 intermittently
+https://au.int/en/documents/*
+
+# Relative anchors — resolved as file:// paths by lychee, excluded here
 ../../issues/*
 ../../stargazers
 ../../commits/*

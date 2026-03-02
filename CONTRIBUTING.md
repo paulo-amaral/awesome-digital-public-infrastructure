@@ -6,7 +6,7 @@ Thank you for helping build the most comprehensive resource on Digital Public In
 
 ### Suggest a New Resource
 
-1. **[Open an issue](../../issues/new/choose)** using the **Add Resource** template.
+1. **[Open an issue](https://github.com/paulo-amaral/awesome-digital-public-infrastructure/issues/new/choose)** using the **Add Resource** template.
 2. Fill in the resource name, URL, category, and a one-sentence description.
 3. A maintainer will review and merge it if it meets the criteria below.
 

@@ -1,6 +1,6 @@
 # Awesome Digital Public Infrastructure 
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md) [![Last Updated](https://img.shields.io/github/last-commit/paulo-amaral/awesome-digital-public-infrastructure)](../../commits/main) [![Latest Release](https://img.shields.io/github/v/release/paulo-amaral/awesome-digital-public-infrastructure?label=release)](https://github.com/paulo-amaral/awesome-digital-public-infrastructure/releases) [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-support-orange?style=flat&logo=buy-me-a-coffee&logoColor=white)](https://www.buymeacoffee.com/paulosecur5)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md) [![Last Updated](https://img.shields.io/github/last-commit/paulo-amaral/awesome-digital-public-infrastructure)](https://github.com/paulo-amaral/awesome-digital-public-infrastructure/commits/main) [![Latest Release](https://img.shields.io/github/v/release/paulo-amaral/awesome-digital-public-infrastructure?label=release)](https://github.com/paulo-amaral/awesome-digital-public-infrastructure/releases) [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-support-orange?style=flat&logo=buy-me-a-coffee&logoColor=white)](https://www.buymeacoffee.com/paulosecur5)
 
 A list of Digital Public Infrastructure (DPI) and Digital Public Goods (DPG) resources I've found useful — tools, frameworks, country implementations, and things I've learned working in the field.
 
@@ -57,7 +57,7 @@ The main reference points for anyone working on DPI or evaluating DPGs.
 ### 🏗️ DPI Core Frameworks
 
 - [UNDP Digital Public Goods Standard](https://digitalpublicgoods.net/standard/) — nine criteria a solution must meet to be certified as a DPG
-- [GovStack Reference Architecture](https://www.govstack.global/our-work/technical-specifications/) — a building-block model for assembling government digital services
+- [GovStack Reference Architecture](https://specs.govstack.global/) — a building-block model for assembling government digital services
 - [ITU Digital Transformation Framework](https://www.itu.int/en/ITU-D/Pages/default.aspx) — guidelines and metrics from the ITU for national digital transformation
 - [OECD Digital Government Policy Framework](https://www.oecd.org/governance/digital-government/oecd-digital-government-policy-framework.htm) — six dimensions for assessing how mature a country's digital government is
 - [World Bank DPI Framework](https://www.worldbank.org/en/topic/digitaldevelopment) — policy and investment guidance for national digital infrastructure
@@ -88,7 +88,7 @@ The main reference points for anyone working on DPI or evaluating DPGs.
 
 ### 🌏 Regional Digital Strategies
 
-- [ASEAN Digital Masterplan 2025](https://asean.org/asean-digital-masterplan-2025/) — regional framework covering digital infrastructure, services, and inclusion across Southeast Asia
+- [ASEAN Digital Masterplan 2025](https://asean.org/) — regional framework covering digital infrastructure, services, and inclusion across Southeast Asia
 - [Pacific Digital Economy Programme (PDEP)](https://www.thepalm.org/) — Pacific Islands digital economy and e-government programs covering 14 nations
 - [Smart Africa Blueprint](https://smartafrica.org/) — pan-African digital transformation framework adopted by 38 African heads of state
 - [Digital Economy for Africa (DE4A)](https://www.worldbank.org/en/programs/all-africa-digital-transformation) — World Bank initiative to connect every African individual, business, and government digitally by 2030
@@ -193,7 +193,7 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 - [ITU ICT Development Index](https://www.itu.int/en/ITU-D/Statistics/Pages/publications/mis/methodology.aspx) — benchmarks digital readiness across 167 countries
 - [OECD Digital Government Index](https://www.oecd.org/governance/digital-government/digital-government-index.htm) — maturity model covering six dimensions of digital government
-- [DIAL Digital Investment Framework](https://digitalimpactalliance.org/research/digital-investment-framework/) — helps prioritize DPG investments
+- [DIAL Digital Investment Framework](https://dial.global/) — helps prioritize DPG investments
 - [WEF Global Technology Governance Report](https://www.weforum.org/reports/global-technology-governance-report-2021/) — framework for responsible DPI deployment
 - [GovStack Digital Readiness Assessment](https://www.govstack.global/) — country readiness tool for building-block-based DPI
 
@@ -207,7 +207,7 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 - [UNICEF Venture Fund Guidance](https://www.unicef.org/innovation/venturefund) — how to fund and scale DPGs in low-income countries
 - [Digital Square Global Goods Maturity Model](https://digitalsquare.org/global-goods-maturity-model) — maturity model for health digital tools
-- [Open Source Policy Guide](https://github.com/OpenSourcePolicyCenter/toolkit) — policy frameworks for government open-source adoption
+- [Open Source Policy Guide](https://github.com/todogroup/ospology) — policy frameworks and OSPO guidance for government open-source adoption
 - [ITU Model Policy on Open Source](https://www.itu.int/) — ITU guidance for national open-source policies
 
 ---
@@ -232,7 +232,7 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 | [Digital Impact Alliance (DIAL)](https://digitalimpactalliance.org/) | Research on digital development |
 | [Digital Square](https://digitalsquare.org/) | Grants for global digital health tools |
 | [Co-Develop Fund](https://www.co-develop.net/) | Philanthropic funding for DPI in low-income countries |
-| [Gates Foundation](https://www.gatesfoundation.org/our-work/programs/global-growth-and-opportunity/financial-services-for-the-poor) | Financial inclusion |
+| [Gates Foundation](https://www.gatesfoundation.org/our-work/programs/global-growth-and-opportunity/inclusive-financial-systems) | Financial inclusion |
 | [Omidyar Network](https://omidyar.com/) | Investment in DPI and open internet |
 | [Rockefeller Foundation](https://www.rockefellerfoundation.org/) | Digital equity |
 
@@ -249,16 +249,16 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### 📖 Start Here
 
-- [The Case for a New Digital Bretton Woods](https://www.bu.edu/gdp/files/2022/05/GDP_PB_032_FIN.pdf) — Boston University Global Development Policy Center
+- [The Case for a New Digital Bretton Woods](https://www.bu.edu/gdp/) — Boston University Global Development Policy Center
 - [DPI: A Moonshot for Equitable Growth](https://www.co-develop.net/dpi-moonshot) — Co-Develop Fund, 2022
 - [Rethinking Digital Public Infrastructure](https://www3.weforum.org/docs/WEF_Rethinking_Digital_Public_Infrastructure.pdf) — World Economic Forum
-- [Digital Public Infrastructure and Democracy](https://www.omidyar.com/insights/) — Omidyar Network
+- [Digital Public Infrastructure and Democracy](https://omidyarnetwork.com/) — Omidyar Network
 
 ### 📈 Impact Evidence
 
 - [DHIS2: 30 Years of Health Information Infrastructure](https://dhis2.org/impact/) — country-level impact across 100+ countries
 - [MOSIP Country Implementations](https://mosip.io/country.php) — national ID deployments across Africa and Asia
-- [Mojaloop Impact Report](https://mojaloop.io/impact/) — financial inclusion through open payments
+- [Mojaloop Impact Report](https://mojaloop.io/) — financial inclusion through open payments
 - [India Stack Impact](https://indiastack.org/) — 1.3B identities, $2T+ in UPI transactions annually
 
 ### 📜 Policy
@@ -278,8 +278,8 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 | [DPI Academy](https://www.undp.org/digital/academy) | UNDP | Beginner to Intermediate |
 | [ITU Academy](https://academy.itu.int/) | ITU | All levels |
 | [DHIS2 Academy](https://dhis2.org/academy/) | DHIS2 | Beginner to Advanced |
-| [GovStack Learning Path](https://www.govstack.global/learning/) | GovStack | Technical |
-| [Digital Principles e-Learning](https://digitalprinciples.org/learn/) | DIAL | Beginner |
+| [GovStack Learning Path](https://govstack.global/) | GovStack | Technical |
+| [Digital Principles e-Learning](https://digitalprinciples.org/principles/) | DIAL | Beginner |
 | [ODK Documentation](https://docs.getodk.org/) | ODK | Technical |
 
 ### 🏅 Certifications
@@ -308,7 +308,7 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 |-------------|--------------|
 | [UNICEF Venture Fund](https://www.unicef.org/innovation/venturefund) | DPG startups in low-income countries, no equity taken |
 | [Digital Square Open Calls](https://digitalsquare.org/opencalls) | Grants for global digital health tools |
-| [DIAL Fellowship](https://digitalimpactalliance.org/get-involved/) | Digital development practitioners |
+| [DIAL Fellowship](https://dial.global/) | Digital development practitioners |
 | [Co-Develop Country Grants](https://www.co-develop.net/) | Governments implementing DPI |
 
 ---
@@ -344,7 +344,7 @@ This list is kept up to date with contributions from people working in governmen
 
 **How to add a resource:**
 1. Read [CONTRIBUTING.md](CONTRIBUTING.md)
-2. [Open an issue](../../issues/new/choose) using the Add Resource template
+2. [Open an issue](https://github.com/paulo-amaral/awesome-digital-public-infrastructure/issues/new/choose) using the Add Resource template
 3. Or submit a pull request directly
 
 **What belongs here:**

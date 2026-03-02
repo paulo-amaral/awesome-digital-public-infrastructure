@@ -16,7 +16,7 @@ Brazil is notable for combining **regulatory mandates** with **technical opennes
 | Health Records | [Conecte SUS](https://conectesus.saude.gov.br/) | 2021 | 200M+ records |
 | Electronic Voting | [e-Voting (Urna Eletrônica)](https://www.tse.jus.br/) | 1996 | 156M voters |
 | Digital Signature | [e-Title / e-CPF](https://www.iti.gov.br/) | 2001 | ICP-Brasil PKI |
-| Social Registry | [CadÚnico](https://www.gov.br/pt-br/servicos/inscrever-se-no-cadastro-unico) | 2001 | 90M+ beneficiaries |
+| Social Registry | [CadÚnico](https://www.gov.br/pt-br/servicos) | 2001 | 90M+ beneficiaries |
 
 ## Open-Source Tools and Specifications
 
