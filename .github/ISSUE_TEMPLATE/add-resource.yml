@@ -1,0 +1,79 @@
+name: Add Resource
+description: Suggest a new resource to add to the list
+title: "[Add] "
+labels: ["addition", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing! Please fill in the details below.
+        Before submitting, check the [contribution guidelines](../../CONTRIBUTING.md).
+
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+      placeholder: "e.g. DHIS2"
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      placeholder: "https://..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Frameworks & Standards
+        - DPGs — Health
+        - DPGs — Identity & Civil Registration
+        - DPGs — Payments & Financial Inclusion
+        - DPGs — Education
+        - DPGs — Climate & Environment
+        - DPGs — Data Exchange & Interoperability
+        - DPGs — Child Protection & Social Protection
+        - Country DPI Stacks
+        - Toolkits & Assessment Frameworks
+        - Organizations & Communities
+        - Research & Reports
+        - Courses & Learning
+        - Jobs & Opportunities
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: description
+    attributes:
+      label: One-sentence description
+      description: Keep it concise. Start with a capital letter, end with a period.
+      placeholder: "Open-source platform for..."
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: License (for software)
+      description: SPDX identifier or leave blank if not applicable
+      placeholder: "MIT / Apache 2.0 / GPL 3.0 / CC BY 4.0"
+
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: Checklist
+      options:
+        - label: The resource is freely accessible (not paywalled)
+          required: true
+        - label: The resource is actively maintained or recently published
+          required: true
+        - label: The resource is directly relevant to DPI or DPG
+          required: true
+        - label: I have checked this is not already listed
+          required: true

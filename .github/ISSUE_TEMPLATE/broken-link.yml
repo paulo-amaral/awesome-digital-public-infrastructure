@@ -1,0 +1,32 @@
+name: Broken Link
+description: Report a link that no longer works
+title: "[Broken Link] "
+labels: ["broken-link", "maintenance"]
+body:
+  - type: input
+    id: resource
+    attributes:
+      label: Resource name
+      placeholder: "e.g. DHIS2"
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Broken URL
+      placeholder: "https://..."
+    validations:
+      required: true
+
+  - type: input
+    id: replacement
+    attributes:
+      label: Replacement URL (if known)
+      placeholder: "https://..."
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      placeholder: "Any additional context..."

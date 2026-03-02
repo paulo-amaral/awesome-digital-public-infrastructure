@@ -1,0 +1,44 @@
+name: CI — Link Checker
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Run weekly on Mondays at 08:00 UTC
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+jobs:
+  linkcheck:
+    name: Check links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run lychee link checker
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: >
+            --verbose
+            --no-progress
+            --timeout 30
+            --max-retries 3
+            --exclude-mail
+            --exclude "https://localhost"
+            --exclude "https://example.com"
+            --exclude "https://www.linkedin.com"
+            README.md
+            CONTRIBUTING.md
+            docs/**/*.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create issue on link failure
+        if: failure()
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Broken links detected"
+          content-filepath: ./lychee/out.md
+          labels: broken-link, maintenance
