@@ -239,7 +239,7 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 |---|---|
 | [Digital Impact Alliance (DIAL)](https://digitalimpactalliance.org/) | Research on digital development |
 | [Digital Square](https://digitalsquare.org/) | Grants for global digital health tools |
-| [Co-Develop Fund](https://www.codevelop.fund/) | Philanthropic funding for DPI in low-income countries |
+| [Co-Develop Fund](https://www.codevelop.fund/) | Philanthropic funding for DPI in low-income countries — [publications](https://www.codevelop.fund/publications): evidence compendium, sector reports (health, agriculture, SIDS), and deployment guidance |
 | [Gates Foundation](https://www.gatesfoundation.org/our-work/programs/global-growth-and-opportunity/inclusive-financial-systems) | Financial inclusion |
 | [Omidyar Network](https://omidyar.com/) | Investment in DPI and open internet |
 | [Rockefeller Foundation](https://www.rockefellerfoundation.org/) | Digital equity |
