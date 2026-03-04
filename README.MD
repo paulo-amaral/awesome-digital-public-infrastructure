@@ -187,6 +187,7 @@ Real country implementations with detailed profiles on what they built, what wor
 | 🇷🇼 Rwanda | 14M | Irembo, National ID, mobile money | coming soon |
 | 🇵🇭 Philippines | 115M | PhilSys, InstaPay, eGovPH | coming soon |
 | 🇸🇳 Senegal | 17M | Wari, Orange Money, DER programs | coming soon |
+| 🇹🇹 Trinidad & Tobago | 1.4M | First DaaS implementation — verifiable credentials at national scale (2025) | coming soon |
 | 🇫🇯 Fiji | 900K | Digital Fiji strategy, mHealth pilots | coming soon |
 
 Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -211,6 +212,7 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### 📋 Procurement & Policy
 
+- [CDPI DPI-as-a-Packaged Solution (DaaS)](https://docs.cdpi.dev/initiatives/dpi-as-a-packaged-solution-daas) — CDPI's approach to rapid DPI deployment (3–6 months) using pre-packaged open-source solutions, trained vendors, and policy templates; Trinidad and Tobago was the first country to go live with DaaS, rolling out verifiable credentials at national scale
 - [UNICEF Venture Fund Guidance](https://www.unicef.org/innovation/venturefund) — how to fund and scale DPGs in low-income countries
 - [Digital Square Global Goods Maturity Model](https://digitalsquare.org/global-goods-maturity-model) — maturity model for health digital tools
 - [Open Source Policy Guide](https://github.com/todogroup/ospology) — policy frameworks and OSPO guidance for government open-source adoption
