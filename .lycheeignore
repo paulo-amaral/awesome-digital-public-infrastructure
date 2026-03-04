@@ -41,7 +41,7 @@ https://e-resident.gov.ee/*
 https://conectesus.saude.gov.br/*
 
 # Intermittently unreachable or suspended government sites
-https://www.co-develop.net/*
+# co-develop.net domain migrated to codevelop.fund — old domain removed from repo
 https://www.mssi.gov.tl/*
 https://www.moh.gov.tl/*
 https://www.rdtl.tl/*

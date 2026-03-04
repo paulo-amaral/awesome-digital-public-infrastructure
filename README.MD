@@ -61,9 +61,9 @@ The main reference points for anyone working on DPI or evaluating DPGs.
 - [ITU Digital Transformation Framework](https://www.itu.int/en/ITU-D/Pages/default.aspx) — guidelines and metrics from the ITU for national digital transformation
 - [OECD Digital Government Policy Framework](https://www.oecd.org/governance/digital-government/oecd-digital-government-policy-framework.htm) — six dimensions for assessing how mature a country's digital government is
 - [World Bank DPI Framework](https://www.worldbank.org/en/topic/digitaldevelopment) — policy and investment guidance for national digital infrastructure
-- [Co-Develop DPI Framework](https://www.co-develop.net/) — practical guidance for countries designing their own DPI
+- [Co-Develop DPI Framework](https://www.codevelop.fund/) — practical guidance for countries designing their own DPI
 - [Principles for Digital Development](https://digitalprinciples.org/) — nine principles adopted by 300+ organizations working in tech and development
-- [DPI Safeguards Framework](https://www.co-develop.net/dpi-safeguards) — rights-based guidance for DPI design
+- [DPI Safeguards Framework](https://www.dpi-safeguards.org/) — rights-based guidance for DPI design
 - [IDEA International — DPI & Democracy](https://www.idea.int/theme/digital-public-infrastructure) — how DPI shapes electoral integrity, civic participation, and democratic governance
 
 ### 🤖 AI & Emerging Technology
@@ -239,7 +239,7 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 |---|---|
 | [Digital Impact Alliance (DIAL)](https://digitalimpactalliance.org/) | Research on digital development |
 | [Digital Square](https://digitalsquare.org/) | Grants for global digital health tools |
-| [Co-Develop Fund](https://www.co-develop.net/) | Philanthropic funding for DPI in low-income countries |
+| [Co-Develop Fund](https://www.codevelop.fund/) | Philanthropic funding for DPI in low-income countries |
 | [Gates Foundation](https://www.gatesfoundation.org/our-work/programs/global-growth-and-opportunity/inclusive-financial-systems) | Financial inclusion |
 | [Omidyar Network](https://omidyar.com/) | Investment in DPI and open internet |
 | [Rockefeller Foundation](https://www.rockefellerfoundation.org/) | Digital equity |
