@@ -140,6 +140,7 @@ Software certified by the [Digital Public Goods Alliance](https://digitalpublicg
 | [Kolibri](https://learningequality.org/kolibri/) | Works offline, designed for schools with no reliable internet | — | MIT |
 | [OpenEDX](https://openedx.org/) | Powers edX and over 100 national deployments | — | AGPL 3.0 |
 | [Sunbird](https://sunbird.org/) | India's DIKSHA learning platform, open-sourced | 250M+ | MIT |
+| [Learning Passport](https://www.learningpassport.org/) | UNICEF online/offline/mobile learning platform for children in crisis and low-connectivity contexts | 10M+ | — |
 
 ### 🌿 Climate & Environment
 
