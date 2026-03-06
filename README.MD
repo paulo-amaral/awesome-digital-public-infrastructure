@@ -204,6 +204,10 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 - [DIAL Digital Investment Framework](https://dial.global/) — helps prioritize DPG investments
 - [WEF Global Technology Governance Report](https://www.weforum.org/reports/global-technology-governance-report-2021/) — framework for responsible DPI deployment
 - [GovStack Digital Readiness Assessment](https://www.govstack.global/) — country readiness tool for building-block-based DPI
+- [UNDP AILA — AI Landscape Assessment](https://www.undp.org/digital/aila) — national AI readiness framework assessing government, private sector, civil society, and academia; deployed in 15+ countries since 2024
+- [UNDP DRA — Digital Readiness Assessment](https://www.undp.org/digital/dra) — cross-cutting hybrid assessment covering five digital transformation pillars; deployed in 50+ countries
+- [UNDP Digital Development Compass](https://digitaldevelopmentcompass.undp.org/) — aggregates digital indicators from 140+ open datasets including DPI sub-dimensions: identity, payments, data exchange
+- [UNESCO Digital Competency Framework](https://www.unesco.org/en/digital-competency-framework) — strengthens digital skills and institutional capacity in government for civil servants and policymakers
 
 ### 🔌 Interoperability
 
@@ -279,6 +283,7 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 - [OECD Going Digital Policy Notes](https://www.oecd.org/going-digital/policy-notes.htm) — country-specific digital transformation guidance
 - [AfDB Digital Transformation Strategy](https://www.afdb.org/en/topics-and-sectors/topics/digital-transformation) — Africa's digital infrastructure priorities
 - [G20 DPI Framework](https://www.g20.org/) — G20 DPI commitments and principles
+- [Deloitte Government Trends 2025](https://www.deloitte.com/us/en/insights/industry/government-public-sector-services/government-trends.html) — annual analysis of how governments are transforming digital service delivery, AI integration, and public infrastructure
 
 ### 👩‍💻 Digital Workforce & Inclusion
 
