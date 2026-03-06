@@ -79,6 +79,21 @@ Country profiles live in `docs/country-profiles/`. Use the template in that dire
 4. Key lessons / field notes
 5. References
 
+### Field Notes (Lessons Learned)
+
+Field notes are hard-won insights from real DPI implementations — the kind of thing that doesn't appear in any framework document.
+
+**Two ways to contribute:**
+
+1. **Via issue (easiest):** [Open a Lesson Learned issue](https://github.com/paulo-amaral/awesome-digital-public-infrastructure/issues/new?template=share-lesson-learned.yml) — fill in the form and a maintainer will add it.
+2. **Via pull request:** Copy `docs/field-notes/TEMPLATE.md`, create a new file (e.g. `docs/field-notes/your-topic.md`), add a row to `docs/field-notes/README.md`, and open a PR.
+
+**What makes a good lesson:**
+- Based on real experience, not theory
+- One clear, actionable insight per bullet
+- Explains the *why* — what went wrong or right and what to do differently
+- No confidential or personally identifiable information
+
 ---
 
 ## Code of Conduct

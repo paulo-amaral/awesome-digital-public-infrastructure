@@ -18,4 +18,7 @@ Things learned working in the field that don't appear in any framework document.
 
 ---
 
+**Want to contribute a lesson?**
+→ [Submit via issue](https://github.com/paulo-amaral/awesome-digital-public-infrastructure/issues/new?template=share-lesson-learned.yml) — or copy [TEMPLATE.md](TEMPLATE.md) and open a PR.
+
 ← [Back to main list](../../README.MD)
