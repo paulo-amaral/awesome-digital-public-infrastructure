@@ -1,0 +1,66 @@
+name: Share a Lesson Learned
+description: Contribute a hard-won lesson from a real DPI or DPG implementation
+title: "[Field Note] "
+labels: ["field-note", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your field experience! These lessons are the most valuable content in this list — things that don't appear in any framework document.
+        Please describe one clear, actionable insight from a real implementation.
+
+  - type: input
+    id: context
+    attributes:
+      label: Context
+      description: Where did this happen? Country, organisation, project, or sector.
+      placeholder: "e.g. UNICEF Timor-Leste, Ministry of Health data system, 2024"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      description: Which field-note category does this lesson best fit?
+      options:
+        - Design & Architecture
+        - Offline-First & Last Mile
+        - Digital Divide, AI Divide & Inclusion
+        - Emerging Technologies
+        - Policies, Standards & Laws
+        - Common Mistakes
+        - Timor-Leste & the Pacific
+        - Other (describe in the lesson)
+    validations:
+      required: true
+
+  - type: textarea
+    id: lesson
+    attributes:
+      label: The lesson
+      description: One clear, actionable insight. Start with a bold title, then explain the "why" in 2–4 sentences. Real examples beat abstract principles.
+      placeholder: |
+        **Your title here** — Explain what you learned and why it matters.
+        What went wrong (or right)? What would you tell someone starting this project today?
+    validations:
+      required: true
+
+  - type: input
+    id: reference
+    attributes:
+      label: Reference or link (optional)
+      description: A report, article, or public document that supports or illustrates this lesson.
+      placeholder: "https://..."
+
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: Checklist
+      options:
+        - label: This is based on real implementation experience (not theoretical)
+          required: true
+        - label: The lesson is actionable — someone can apply it in their own project
+          required: true
+        - label: No confidential or personally identifiable information is included
+          required: true

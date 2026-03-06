@@ -43,7 +43,7 @@ body:
         - Organizations & Communities
         - Research & Reports
         - Courses & Learning
-        - Jobs & Opportunities
+        - Field Notes
         - Other
     validations:
       required: true
