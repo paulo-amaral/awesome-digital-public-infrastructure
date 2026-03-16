@@ -94,6 +94,22 @@ The main reference points for anyone working on DPI or evaluating DPGs.
 - [Smart Africa Blueprint](https://smartafrica.org/) — pan-African digital transformation framework adopted by 38 African heads of state
 - [Digital Economy for Africa (DE4A)](https://www.worldbank.org/en/programs/all-africa-digital-transformation) — World Bank initiative to connect every African individual, business, and government digitally by 2030
 
+### ⚖️ Legal Informatics & Legislative XML
+
+Standards and frameworks for making legal and legislative documents machine-readable — the infrastructure layer underneath open law data, digital compliance, and e-justice systems.
+
+- [Akoma Ntoso (OASIS LegalDocML v1.0)](https://www.oasis-open.org/standard/akn-v1-0/) — open XML standard (adopted 2018) defining the structure and semantics of parliamentary, legislative, and judicial documents; the name means "linked hearts" in Akan; adopted by the United Nations as the primary format for machine-processable UN documents; used by the UK National Archives, US Congress (USLM), Brazil (LexML), and many parliaments
+- [OASIS LegalDocML Technical Committee](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=legaldocml) — OASIS TC that governs the Akoma Ntoso standard; the international body where governments, parliaments, and researchers converge on interoperable legal document markup
+- [LegalRuleML (OASIS)](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=legalruleml) — companion OASIS standard for the logical-formal representation of legal norms as machine-readable rules; enables automated compliance checking and temporal legal reasoning (what the law said at a given point in time)
+- [CIRSFID / LEDS4XAIL — University of Bologna](https://site.unibo.it/leds4xail/en/) — leading interdisciplinary research centre in legal informatics and explainable AI; home of Akoma Ntoso's co-author [Monica Palmirani](https://www.unibo.it/sitoweb/monica.palmirani/pubblicazioni), Full Professor of Legal Informatics and co-chair of the OASIS LegalDocML and LegalRuleML TCs; research spans five areas directly relevant to DPI:
+  - **eLegislation** — XML meta-modeling of legal text; dynamic management of norms over time (point-in-time consolidation)
+  - **Legal reasoning** — LegalRuleML-based formal models for compliance checking; temporal legal logic
+  - **Legal knowledge representation** — ontological modeling of legal knowledge; NLP extraction from legal corpora
+  - **eGovernance / eJustice** — digital transformation of public administration, eParticipation, and justice system digitization
+  - **Digital rights** — digital identity, privacy, and awareness of fundamental rights in digital environments
+- [Lexdatafication](https://cris.unibo.it/handle/11585/843063) — University of Bologna project modelling Italy's complete legal knowledge base in Akoma Ntoso, in cooperation with IPZS (Italy's Official Gazette entity); a blueprint for national-scale open law data built from legacy normative databases
+- [Summer School Legislative XML — University of Bologna](http://summerschoollex.cirsfid.unibo.it/) — annual intensive program training public officials and legal technologists on Akoma Ntoso and Legal XML; run by CIRSFID since the early 2000s
+
 ---
 
 ## ✅ Certified DPGs by Domain
