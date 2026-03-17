@@ -206,6 +206,7 @@ Real country implementations with detailed profiles on what they built, what wor
 | 🇸🇳 Senegal | 17M | Wari, Orange Money, DER programs | coming soon |
 | 🇹🇹 Trinidad & Tobago | 1.4M | First DaaS implementation — verifiable credentials at national scale (2025) | coming soon |
 | 🇫🇯 Fiji | 900K | Digital Fiji strategy, mHealth pilots | coming soon |
+| 🇰🇭 Cambodia | 17M | [CamDX](https://camdx.gov.kh/) (data exchange, X-Road inspired), [CamDigiKey](https://camdx.gov.kh/docs/open-api/ekyc) (digital ID & e-KYC), [verify.gov.kh](https://verify.gov.kh/) (QR + blockchain document verification, Gold ASEAN Digital Awards 2024, adopted by Philippines) | coming soon |
 
 Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
