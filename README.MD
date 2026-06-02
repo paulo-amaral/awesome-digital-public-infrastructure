@@ -292,6 +292,7 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 - [GovStack Service Design Playbook](https://playbook.govstack.global/implementation/design-service) — hands-on guidance for mapping as-is services, user needs, journeys, and to-be digital service design
 - [GovStack Building Block Software](https://govstack.global/software/) — product-agnostic catalogue for browsing open-source and proprietary software that implements GovStack Building Blocks, including compliance reports
 - [UNDP DPI Approach Playbook](https://www.undp.org/sites/g/files/zskgke326/files/2023-08/undp-the-dpi-approach-a-playbook.pdf) — practical PDF playbook with checklists, assessment tools, case studies, and governance guidance for countries starting DPI
+- [Deloitte Digital Public Infrastructure Playbook](https://www.deloitte.com/content/dam/assets-zone3/us/en/docs/industries/government-public-services/2024/in-ps-dpi-playbook-brand-noexp.pdf) — direct PDF playbook for DPI strategy, design, and implementation planning from a government and public services lens
 - [UN 2.0: The Digital Public Infrastructure Approach](https://un-two-zero.network/contents/the-digital-public-infrastructure-approach-a-playbook/) — UN 2.0 catalogue entry for the DPI playbook, useful as a concise overview page before sharing the full PDF
 - [UNDP Guide to Digital Participation Platforms 2025](https://www.undp.org/publications/guide-digital-participation-platforms-2025) — practical guide and platform matrix for inclusive civic engagement, consultation, and participatory democracy tools
 - [World Bank Digital Agriculture Roadmap Playbook](https://connect4impact.worldbank.org/system/files/2026-03/Digital%20Agriculture%20Roadmap%20Playbook.pdf) — 2025 toolkit for developing country digital agriculture strategies and investment roadmaps
@@ -353,6 +354,8 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 - [DPI-AI Framework: Building AI-Ready Nations through Digital Public Infrastructure](https://digitalpublicinfrastructure.ai/) — CDPI vision paper (2026) on embedding AI into DPI via AI Blocks, DPI Workflows, and Public Agents; CC BY 4.0
 - [The Agentic State: Rethinking Government for the Era of Agentic AI](https://agenticstate.org/) — vision paper (2025, Global GovTech Centre / World Bank) covering AI in public services, workflows, procurement, governance, and crisis response; launched at Tallinn Digital Summit
+- [Government Trends 2025: Built to Deliver](https://www.deloitte.com/gr/en/Industries/government-public/about/government-trends-2025.html) — Deloitte report on nine trends advancing government's capacity to deliver large-scale priorities amid rising citizen expectations, technology shifts, and implementation constraints
+- [Deloitte Digital Public Infrastructure Playbook](https://www.deloitte.com/content/dam/assets-zone3/us/en/docs/industries/government-public-services/2024/in-ps-dpi-playbook-brand-noexp.pdf) — DPI playbook PDF for government teams and advisors planning national or sector digital public infrastructure initiatives
 - [2025 State of Digital Public Infrastructure Report](https://www.ucl.ac.uk/bartlett/publications/2025/nov/2025-state-digital-public-infrastructure-report) — UCL IIPP baseline report on DPI measurement, prevalence, and maturity across 210 countries
 - [2025 State of the Digital Public Goods Ecosystem](https://www.digitalpublicgoods.net/blog/2025-dpg-ecosystem-report) — DPGA report on verified DPG growth, DPG-for-DPI value, financing, governance, and ecosystem priorities
 - [A Digital Public Infrastructure Approach for the Agriculture Sector](https://connect4impact.worldbank.org/system/files/2026-02/DPI-Approach-for-Agriculture-Sector_Final_.pdf) — World Bank sector paper on applying DPI building blocks to farmer registries, data exchange, advisory services, traceability, and agri-finance
@@ -379,7 +382,7 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 - [AfDB Digital Transformation Strategy](https://www.afdb.org/en/topics-and-sectors/topics/digital-transformation) — Africa's digital infrastructure priorities
 - [G20 DPI Framework](https://www.g20.org/) — G20 DPI commitments and principles
 - [OECD Government at a Glance 2025: Digital Public Infrastructure](https://www.oecd.org/en/publications/government-at-a-glance-2025_0efd0bcd-en/full-report/digital-public-infrastructure_1cee4220.html) — comparative OECD chapter on digital identity, data exchange, interoperability, and public service delivery
-- [Deloitte Government Trends 2025](https://www.deloitte.com/us/en/insights/industry/government-public-sector-services/government-trends.html) — annual analysis of how governments are transforming digital service delivery, AI integration, and public infrastructure
+- [Deloitte Government Trends 2025](https://www.deloitte.com/gr/en/Industries/government-public/about/government-trends-2025.html) — annual government trends report focused on delivery capacity, agile governance, citizen expectations, and technology-enabled public sector transformation
 
 ### 👩‍💻 Digital Workforce & Inclusion
 
