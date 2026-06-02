@@ -20,10 +20,12 @@ DPI is the shared digital layer a country builds so that identity, payments, and
   - [🪪 Identity & Civil Registration](#identity--civil-registration)
   - [💳 Payments & Financial Inclusion](#payments--financial-inclusion)
   - [🎓 Education](#education)
+  - [🗳️ Civic Participation & Democratic Governance](#civic-participation--democratic-governance)
   - [🌿 Climate & Environment](#climate--environment)
   - [🔗 Data Exchange & Interoperability](#data-exchange--interoperability)
   - [🛡️ Child Protection & Social Protection](#child-protection--social-protection)
 - [🌍 Country DPI Stacks](#country-dpi-stacks)
+  - [🌎 Regional & Cross-Border DPI](#regional--cross-border-dpi)
 - [🧰 Toolkits & Assessment Frameworks](#toolkits--assessment-frameworks)
 - [🏛️ Organizations & Communities](#organizations--communities)
 - [📚 Research & Reports](#research--reports)
@@ -55,9 +57,13 @@ The main reference points for anyone working on DPI or evaluating DPGs.
 
 ### 🏗️ DPI Core Frameworks
 
-- [UNDP Digital Public Goods Standard](https://digitalpublicgoods.net/standard/) — nine criteria a solution must meet to be certified as a DPG
+- [DPGA Digital Public Goods Standard](https://digitalpublicgoods.net/standard/) — nine criteria a solution must meet to be certified as a DPG
 - [DPGA DPGs for DPI Collection](https://www.digitalpublicgoods.net/collections/coll-dpi) — curated set of certified DPGs mapped to the four DPI use cases: identity, payments, data exchange, and government transfers
+- [CDPI DPI Wiki](https://docs.cdpi.dev/the-dpi-wiki/dpi-overview) — practical explainer on DPI concepts, architecture principles, and first-use-case selection
+- [Global Digital Compact](https://www.un.org/global-digital-compact/en) — UN framework adopted in 2024 that calls for investment in digital public goods and safe, inclusive digital public infrastructure
 - [GovStack Reference Architecture](https://specs.govstack.global/) — a building-block model for assembling government digital services
+- [GovStack Implementation Playbook](https://specs.govstack.global/implementation-playbook) — step-by-step guide for governments planning, designing, developing, and implementing digital public services
+- [GovStack Building Block Software](https://govstack.global/software/) — marketplace/catalogue of software implementing GovStack Building Blocks, with compliance information across deployment, API standards, and requirement specifications
 - [ITU Digital Transformation Framework](https://www.itu.int/en/ITU-D/Pages/default.aspx) — guidelines and metrics from the ITU for national digital transformation
 - [OECD Digital Government Policy Framework](https://www.oecd.org/governance/digital-government/oecd-digital-government-policy-framework.htm) — six dimensions for assessing how mature a country's digital government is
 - [World Bank DPI Framework](https://www.worldbank.org/en/topic/digitaldevelopment) — policy and investment guidance for national digital infrastructure
@@ -65,6 +71,22 @@ The main reference points for anyone working on DPI or evaluating DPGs.
 - [Principles for Digital Development](https://digitalprinciples.org/) — nine principles adopted by 300+ organizations working in tech and development
 - [DPI Safeguards Framework](https://www.dpi-safeguards.org/) — rights-based guidance for DPI design
 - [IDEA International — DPI & Democracy](https://www.idea.int/theme/digital-public-infrastructure) — how DPI shapes electoral integrity, civic participation, and democratic governance
+- [UNDP Digital Public Infrastructure](https://www.undp.org/digital/digital-public-infrastructure) — UNDP's DPI hub covering offerings, safeguards, open source, partners, and country support
+
+### 🧭 DPI & DPG Approaches
+
+Different organizations use complementary lenses for DPI and DPGs: architecture, safeguards, open-source reuse, country roadmaps, rapid deployment, and sector-specific stacks.
+
+- [CDPI DPG and DPI](https://docs.cdpi.dev/the-dpi-wiki/dpg-and-dpi) — explains the relationship between digital public goods as reusable open-source products and digital public infrastructure as country-scale systems
+- [CDPI DPI Architecture Principles](https://docs.cdpi.dev/the-dpi-wiki/dpi-tech-architecture-principles) — five technical principles for DPI: interoperability, minimalist reusable building blocks, ecosystem innovation, federation/decentralization, and security/privacy by design
+- [CDPI DaaS Way](https://cdpi.dev/daas/) — rapid DPI deployment approach using open-source DPGs, pre-qualified service providers, and ready-to-deploy program, policy, legal, and technical artefacts
+- [CDPI DPI-AI Framework](https://digitalpublicinfrastructure.ai/) — 2026 framework for AI-ready public services using AI Blocks, DPI Workflows, and Public Agents on top of existing DPI foundations
+- [DPGA DPGs for DPI Approach](https://www.digitalpublicgoods.net/collections/coll-dpi) — maps certified digital public goods to DPI use cases such as identity, payments, data exchange, and government transfers
+- [GovStack Building Block Approach](https://specs.govstack.global/) — modular architecture approach for assembling reusable, interoperable government digital service capabilities
+- [UNDP DPI Approach Playbook](https://www.undp.org/sites/g/files/zskgke326/files/2023-08/undp-the-dpi-approach-a-playbook.pdf) — direct PDF playbook for country teams, with six practical plays covering DPI scoping, technology, governance, sustainability, and implementation
+- [UN 2.0 entry: The Digital Public Infrastructure Approach](https://un-two-zero.network/contents/the-digital-public-infrastructure-approach-a-playbook/) — UN catalogue page for the UNDP playbook, positioning it as a practical public resource for low- and middle-income countries building inclusive, rights-based DPI
+- [Universal DPI Safeguards Approach](https://www.dpi-safeguards.org/framework) — rights-based approach focused on accountability, inclusion, privacy, safety, and participatory governance across the DPI lifecycle
+- [World Bank Global DPI Program](https://www.worldbank.org/en/results/2026/05/06/global-digital-public-infrastructure-program) — cross-sector country programme approach centered on digital ID, payments, and secure data sharing across 80+ countries
 
 ### 🤖 AI & Emerging Technology
 
@@ -93,6 +115,7 @@ The main reference points for anyone working on DPI or evaluating DPGs.
 - [Pacific Digital Economy Programme (PDEP)](https://www.thepalm.org/) — Pacific Islands digital economy and e-government programs covering 14 nations
 - [Smart Africa Blueprint](https://smartafrica.org/) — pan-African digital transformation framework adopted by 38 African heads of state
 - [Digital Economy for Africa (DE4A)](https://www.worldbank.org/en/programs/all-africa-digital-transformation) — World Bank initiative to connect every African individual, business, and government digitally by 2030
+- [Red GEALC](https://www.oas.org/ext/en/democracy/red-gealc) — Latin America and Caribbean digital government cooperation network coordinating regional standards, shared work groups, and cross-border digital government initiatives such as IdLAC
 
 ### ⚖️ Legal Informatics & Legislative XML
 
@@ -158,6 +181,12 @@ Software certified by the [Digital Public Goods Alliance](https://digitalpublicg
 | [Sunbird](https://sunbird.org/) | India's DIKSHA learning platform, open-sourced | 250M+ | MIT |
 | [Learning Passport](https://www.learningpassport.org/) | UNICEF online/offline/mobile learning platform for children in crisis and low-connectivity contexts | 10M+ | — |
 
+### 🗳️ Civic Participation & Democratic Governance
+
+| Solution | What it does | Scale | License |
+|----------|-------------|-------|---------|
+| [Decidim](https://decidim.org/) | Citizen participation platform for participatory democracy, consultations, assemblies, budgeting, and civic collaboration | 30+ countries, 400+ administrations, 50+ NGOs | AGPL 3.0 |
+
 ### 🌿 Climate & Environment
 
 | Solution | What it does | License |
@@ -208,6 +237,16 @@ Real country implementations with detailed profiles on what they built, what wor
 | 🇫🇯 Fiji | 900K | Digital Fiji strategy, mHealth pilots | coming soon |
 | 🇰🇭 Cambodia | 17M | [CamDX](https://camdx.gov.kh/) (data exchange, X-Road inspired), [CamDigiKey](https://camdx.gov.kh/docs/open-api/ekyc) (digital ID & e-KYC), [verify.gov.kh](https://verify.gov.kh/) (QR + blockchain document verification, Gold ASEAN Digital Awards 2024, adopted by Philippines) | coming soon |
 
+### 🌎 Regional & Cross-Border DPI
+
+Regional DPI examples where countries agree on shared standards, trust frameworks, and reusable open-source components so citizens and businesses can use national digital credentials across borders.
+
+| Initiative | Region | What it enables | Partners |
+|------------|--------|-----------------|----------|
+| [IdLAC](https://redgealc.org/idlac/en/home/) | Latin America and the Caribbean | Open-source regional digital identity broker for mutual recognition of national eIDs; supports cross-border access to public services, including Brazil-Uruguay digital service access through national eID credentials | Red GEALC, IDB, World Bank, Co-Develop, OAS |
+
+Participating countries include Argentina, Bolivia, Brazil, Chile, Colombia, Costa Rica, Dominican Republic, Ecuador, Guatemala, Paraguay, Peru, and Uruguay.
+
 Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
@@ -219,18 +258,44 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 - [ITU ICT Development Index](https://www.itu.int/en/ITU-D/Statistics/Pages/publications/mis/methodology.aspx) — benchmarks digital readiness across 167 countries
 - [OECD Digital Government Index](https://www.oecd.org/governance/digital-government/digital-government-index.htm) — maturity model covering six dimensions of digital government
 - [DIAL Digital Investment Framework](https://dial.global/) — helps prioritize DPG investments
+- [DPI Roadmap Playbook](https://www.africanenda.org/en/publications/dpi-roadmap-playbook-2) — 2026 country roadmap guide from DIAL, AfricaNenda, Better Than Cash Alliance, and CDPI for planning national DPI priorities
 - [WEF Global Technology Governance Report](https://www.weforum.org/reports/global-technology-governance-report-2021/) — framework for responsible DPI deployment
 - [GovStack Digital Readiness Assessment](https://www.govstack.global/) — country readiness tool for building-block-based DPI
 - [UNDP AILA — AI Landscape Assessment](https://www.undp.org/digital/aila) — national AI readiness framework assessing government, private sector, civil society, and academia; deployed in 15+ countries since 2024
+- [UNDP Digital Guides](https://digitalguides.undp.org/) — thematic guides for applying digital transformation to poverty, governance, resilience, environment, energy, and gender
 - [UNDP DRA — Digital Readiness Assessment](https://www.undp.org/digital/dra) — cross-cutting hybrid assessment covering five digital transformation pillars; deployed in 50+ countries
 - [UNDP Digital Development Compass](https://digitaldevelopmentcompass.undp.org/) — aggregates digital indicators from 140+ open datasets including DPI sub-dimensions: identity, payments, data exchange
+- [UNDP Digital Standards](https://www.undp.org/digital/standards) — public digital standards for teams designing and delivering inclusive digital solutions
+- [UNDP Governance Assessment Framework for Data Exchange Systems](https://governance4dataexchange.org/) — assessment framework for safe, inclusive, and accountable governance of national data exchange systems
+- [UNDP Model Governance Framework for Digital Legal Identity Systems](https://www.governance4id.org/) — rights-based governance framework for digital legal identity as a foundational DPI component
 - [UNESCO Digital Competency Framework](https://www.unesco.org/en/digital-competency-framework) — strengthens digital skills and institutional capacity in government for civil servants and policymakers
 
 ### 🔌 Interoperability
 
+- [DPI Global Data Exchange Directory](https://www.dpi.global/globaldpi/dataexchange) — country examples of data exchange platforms and related DPI implementations
 - [GovStack Building Blocks Specification](https://govstack.gitbook.io/specification/) — technical specs for interoperable government services
+- [GovStack Consent Building Block](https://govstack.gitbook.io/bb-consent/v/consent-1.0/) — specification for managing user consent and authorization across digital government services
+- [GovStack Information Mediation Building Block](https://govstack.gitbook.io/bb-information-mediation) — data exchange and interoperability building block for secure service-to-service communication
+- [GovStack Messaging Building Block](https://govstack.gitbook.io/bb-messaging/v/messaging-1.0/) — reusable messaging capability for notifications and communications in digital public services
+- [GovStack Payments Building Block](https://govstack.gitbook.io/bb-payments/v/payments-1.0/) — payment orchestration specification for government service delivery
+- [GovStack Registration Building Block](https://govstack.gitbook.io/bb-registration/v/registration-1.0/) — reusable registry capability for people, organizations, and service records
+- [GovStack Scheduler Building Block](https://govstack.gitbook.io/bb-scheduler/v/scheduler-1.0/) — appointment and scheduling capability for public service workflows
+- [GovStack Workflow Building Block](https://govstack.gitbook.io/bb-workflow/v/workflow-1.0.1/) — workflow orchestration specification for cross-agency digital services
 - [OpenHIE Architecture](https://ohie.org/framework/) — health information exchange reference architecture
 - [IHE Integration Profiles](https://www.ihe.net/resources/profiles/) — integration profiles for healthcare interoperability
+
+### 🧪 Prototyping & Implementation
+
+- [GovStack Sandbox](https://sandbox.govstack.global/) — demonstration environment for developers to test GovStack architecture and the building-block approach
+- [GovStack Sandbox Documentation](https://govstack.gitbook.io/sandbox/1.0.2-1) — technical walkthrough of the sandbox, APIs, emulators, adapters, and transaction flows
+- [GovStack Use Case Simulation](https://simulation.govstack.global/) — interactive social cash transfer simulation showing how building blocks fit together in a digital service
+- [GovStack Service Design Playbook](https://playbook.govstack.global/implementation/design-service) — hands-on guidance for mapping as-is services, user needs, journeys, and to-be digital service design
+- [GovStack Building Block Software](https://govstack.global/software/) — product-agnostic catalogue for browsing open-source and proprietary software that implements GovStack Building Blocks, including compliance reports
+- [UNDP DPI Approach Playbook](https://www.undp.org/sites/g/files/zskgke326/files/2023-08/undp-the-dpi-approach-a-playbook.pdf) — practical PDF playbook with checklists, assessment tools, case studies, and governance guidance for countries starting DPI
+- [UN 2.0: The Digital Public Infrastructure Approach](https://un-two-zero.network/contents/the-digital-public-infrastructure-approach-a-playbook/) — UN 2.0 catalogue entry for the DPI playbook, useful as a concise overview page before sharing the full PDF
+- [UNDP Guide to Digital Participation Platforms 2025](https://www.undp.org/publications/guide-digital-participation-platforms-2025) — practical guide and platform matrix for inclusive civic engagement, consultation, and participatory democracy tools
+- [World Bank Digital Agriculture Roadmap Playbook](https://connect4impact.worldbank.org/system/files/2026-03/Digital%20Agriculture%20Roadmap%20Playbook.pdf) — 2025 toolkit for developing country digital agriculture strategies and investment roadmaps
+- [World Bank Fast Payments and Financial Market Infrastructure Toolkit](https://academy.worldbank.org/en/prosperity/fci/fast-payments-and-financial-market-infrastructure) — learning toolkit on fast payment systems, financial market infrastructure, and Project FASTT
 
 ### 📋 Procurement & Policy
 
@@ -253,12 +318,15 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 | [UNDP Digital](https://www.undp.org/digital) | Digital transformation in 170+ countries |
 | [ITU](https://www.itu.int/) | UN agency for ICTs |
 | [World Bank Digital Development](https://www.worldbank.org/en/topic/digitaldevelopment) | Finances digital infrastructure |
+| [World Bank Global DPI Program](https://www.worldbank.org/en/results/2026/05/06/global-digital-public-infrastructure-program) | Cross-sector DPI programme supporting digital ID, payments, and secure data sharing in 80+ countries |
 | [UN OICT](https://unite.un.org/) | UN Office of ICT |
 
 ### 🤲 Foundations & Alliances
 
 | Organization | Focus |
 |---|---|
+| [50-in-5 Campaign](https://50in5.net/) | Country-led campaign to help 50 countries design, launch, and scale DPI components within five years |
+| [Centre for Digital Public Infrastructure (CDPI)](https://cdpi.dev/) | Pro bono DPI advisory, architecture blueprints, DaaS rapid deployment, and open resources for country-scale DPI |
 | [Digital Impact Alliance (DIAL)](https://digitalimpactalliance.org/) | Research on digital development |
 | [Digital Square](https://digitalsquare.org/) | Grants for global digital health tools |
 | [BMZ Digital.Global](https://www.bmz-digital.global/en/) | German Federal Ministry (BMZ) digital development programme — umbrella for GovStack, FAIR Forward (AI for development), atingi (digital skills), and Digital Transformation Centers |
@@ -269,8 +337,11 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### 💻 Technical Communities
 
+- [Global DPI Summit](https://www.globaldpisummit.org/) — annual convening for countries, implementers, funders, and experts working on safe and inclusive DPI
 - [GovStack Community](https://www.govstack.global/) — people building reusable government building blocks
 - [OpenHIE Community](https://ohie.org/) — health information exchange implementers worldwide
+- [Open Source Ecosystem Enabler (OSEE)](https://www.undp.org/digital/osee) — ITU-UNDP initiative supporting open-source ecosystems, OSPOs, and sustainable digital public services
+- [Open Source United](https://opensource.un.org/en/initiatives) — UN portal for open-source initiatives, including OSEE and open-source public sector collaboration
 - [Digital Development Forum](https://www.digitaldevelopment.org/) — ICT4D community of practice
 - [ICTworks](https://www.ictworks.org/) — good resource hub for digital development professionals
 
@@ -282,11 +353,18 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 - [DPI-AI Framework: Building AI-Ready Nations through Digital Public Infrastructure](https://digitalpublicinfrastructure.ai/) — CDPI vision paper (2026) on embedding AI into DPI via AI Blocks, DPI Workflows, and Public Agents; CC BY 4.0
 - [The Agentic State: Rethinking Government for the Era of Agentic AI](https://agenticstate.org/) — vision paper (2025, Global GovTech Centre / World Bank) covering AI in public services, workflows, procurement, governance, and crisis response; launched at Tallinn Digital Summit
+- [2025 State of Digital Public Infrastructure Report](https://www.ucl.ac.uk/bartlett/publications/2025/nov/2025-state-digital-public-infrastructure-report) — UCL IIPP baseline report on DPI measurement, prevalence, and maturity across 210 countries
+- [2025 State of the Digital Public Goods Ecosystem](https://www.digitalpublicgoods.net/blog/2025-dpg-ecosystem-report) — DPGA report on verified DPG growth, DPG-for-DPI value, financing, governance, and ecosystem priorities
+- [A Digital Public Infrastructure Approach for the Agriculture Sector](https://connect4impact.worldbank.org/system/files/2026-02/DPI-Approach-for-Agriculture-Sector_Final_.pdf) — World Bank sector paper on applying DPI building blocks to farmer registries, data exchange, advisory services, traceability, and agri-finance
+- [Accelerating the SDGs Through Digital Public Infrastructure](https://www.undp.org/publications/accelerating-sdgs-through-digital-public-infrastructure-compendium-potential-digital-public-infrastructure) — UNDP compendium mapping DPI and DPI-like solutions to all 17 SDGs
 - [Digital Public Infrastructure and Development: A World Bank Group Approach](https://documents1.worldbank.org/curated/en/099031025172027713/pdf/P505739-84c5073b-9d40-4b83-a211-98b2263e87dd.pdf) — World Bank Digital Transformation White Paper, Vol. 1 (2025)
+- [Digital Public Infrastructure for Digital Governments](https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/12/digital-public-infrastructure-for-digital-governments_11fe17d9/ff525dc8-en.pdf) — OECD paper on DPI as a foundation for digital government services, trust, and interoperability
 - [The Case for a New Digital Bretton Woods](https://www.bu.edu/gdp/) — Boston University Global Development Policy Center
 - [The Economics of Digital Public Infrastructure](https://dial.global/research/economics-of-digital-public-infrastructure/) — DIAL / Co-Develop research on DPI's economic case for equitable growth
+- [The Human and Economic Impact of Digital Public Infrastructure](https://www.undp.org/publications/human-and-economic-impact-digital-public-infrastructure) — UNDP/Dalberg study estimating DPI impact across finance, justice, and climate in 70 LMICs
 - [Rethinking Digital Public Infrastructure](https://www3.weforum.org/docs/WEF_Rethinking_Digital_Public_Infrastructure.pdf) — World Economic Forum
 - [Digital Public Infrastructure and Democracy](https://omidyarnetwork.com/) — Omidyar Network
+- [The case for Nature ID](https://www.undp.org/publications/case-nature-id-how-digital-public-infrastructure-can-catalyze-nature-and-climate-action) — UNDP paper on environmental data exchange DPI for climate action, biodiversity, traceability, and green finance
 
 ### 📈 Impact Evidence
 
@@ -300,10 +378,17 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 - [OECD Going Digital Policy Notes](https://www.oecd.org/going-digital/policy-notes.htm) — country-specific digital transformation guidance
 - [AfDB Digital Transformation Strategy](https://www.afdb.org/en/topics-and-sectors/topics/digital-transformation) — Africa's digital infrastructure priorities
 - [G20 DPI Framework](https://www.g20.org/) — G20 DPI commitments and principles
+- [OECD Government at a Glance 2025: Digital Public Infrastructure](https://www.oecd.org/en/publications/government-at-a-glance-2025_0efd0bcd-en/full-report/digital-public-infrastructure_1cee4220.html) — comparative OECD chapter on digital identity, data exchange, interoperability, and public service delivery
 - [Deloitte Government Trends 2025](https://www.deloitte.com/us/en/insights/industry/government-public-sector-services/government-trends.html) — annual analysis of how governments are transforming digital service delivery, AI integration, and public infrastructure
 
 ### 👩‍💻 Digital Workforce & Inclusion
 
+- [GovStack Inclusive Design Whitepaper](https://www.govstack.global/app/uploads/2024/06/2024_GovStack_Inclusive-Design-Whitepaper.pdf) — guidance for gender-responsive, accessible, and inclusive digital government service design
+- [ITU Facts and Figures 2025: Gender Digital Divide](https://www.itu.int/itu-d/reports/statistics/2025/10/15/ff25-the-gender-digital-divide/) — current ITU data on the gap between women and men in internet use and digital access
+- [Mozambique Digital Economy](https://www.trade.gov/country-commercial-guides/mozambique-digital-economy) — country commercial guide overview of Mozambique's digital economy, ICT market, and e-government context
+- [UN Women — Power On](https://www.unwomen.org/en/news-stories/explainer/2023/02/power-on-how-we-can-supercharge-an-equitable-digital-future) — explainer on closing gender gaps in digital access, skills, leadership, and online safety
+- [W3C WAI Accessibility Principles](https://www.w3.org/WAI/fundamentals/accessibility-principles/) — web accessibility principles and references to WCAG, UAAG, ATAG, and WAI-ARIA for inclusive public services
+- [WEF Global Gender Gap Report 2025](https://www.weforum.org/publications/global-gender-gap-report-2025/) — annual benchmark on gender gaps across economic participation, education, health, and political empowerment
 - [Where is Digital Youth Work? Policy Invisibility and the Case for Recognition](https://dywrhubreport2026.netlify.app/) — University of Leeds / INCLUDE+ Network (2026); reviews 800+ government bodies and 26 policies to show how youth workers — the most effective digital inclusion practitioners — are systematically excluded from policy and funding
 
 ---
