@@ -27,6 +27,9 @@ Install [lychee](https://github.com/lycheeverse/lychee):
 # macOS
 brew install lychee
 
+# macOS with MacPorts
+sudo port install lychee
+
 # Or with cargo
 cargo install lychee
 ```
