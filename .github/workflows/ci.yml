@@ -38,11 +38,13 @@ jobs:
             --max-retries 3
             --retry-wait-time 2
             --exclude-loopback
+            --include-fragments
             --accept 200,202,206,429
             README.MD
             CONTRIBUTING.md
             DEVELOPMENT.md
             docs/**/*.md
+            docs/index.html
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

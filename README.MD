@@ -82,7 +82,7 @@ Where to find the core technical standards behind DPI and how each one maps to a
 - [NIST SP 800-63-4 Digital Identity Guidelines](https://pages.nist.gov/800-63-4/) - identity and authenticator assurance levels (IAL/AAL) that national digital ID programs use to calibrate onboarding and login risk
 - [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) - govern, identify, protect, detect, respond, recover; the common language between DPI operators and national CERTs
 - [NIST FIPS 140-3](https://csrc.nist.gov/pubs/fips/140-3/final) - cryptographic module (HSM) validation for the keys behind national CAs and digital signatures
-- [ETSI EN 319 series / eIDAS](https://www.etsi.org/technologies/electronic-signature) - PAdES, XAdES, and CAdES legally valid electronic signatures; the trust framework that X-Road message signing aligns with
+- [ETSI EN 319 series / eIDAS](https://portal.etsi.org/TB-SiteMap/esi/esi-activities) - PAdES, XAdES, and CAdES legally valid electronic signatures; the trust framework that X-Road message signing aligns with
 - [W3C Verifiable Credentials](https://www.w3.org/TR/vc-data-model-2.0/) - data model behind wallet-based credentials and document verification services such as verify.gov.kh
 - [W3C WCAG 2.2](https://www.w3.org/TR/WCAG22/) - level AA as the accessibility floor for citizen-facing services
 - [IETF RFC Editor](https://www.rfc-editor.org/) - the plumbing of secure data exchange: TLS 1.3 (RFC 8446), X.509 PKI (RFC 5280), OCSP (RFC 6960), time-stamping (RFC 3161), OAuth 2.0 and PKCE (RFC 6749, 7636), JWT best practices (RFC 8725)
@@ -322,7 +322,7 @@ Want to contribute a country profile? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 - [CDPI DPI-as-a-Packaged Solution (DaaS)](https://docs.cdpi.dev/initiatives/dpi-as-a-packaged-solution-daas) - CDPI's approach to rapid DPI deployment (3–6 months) using pre-packaged open-source solutions, trained vendors, and policy templates; Trinidad and Tobago was the first country to go live with DaaS, rolling out verifiable credentials at national scale
 - [UNICEF Venture Fund Guidance](https://www.unicef.org/innovation/venturefund) - how to fund and scale DPGs in low-income countries
-- [Digital Square Global Goods Maturity Model](https://digitalsquare.org/global-goods-maturity-model) - maturity model for health digital tools
+- [Digital Square Global Goods Maturity Model](https://digitalsqr.github.io/static-wiki/index.php/Global_Goods_Maturity.html) - maturity model for health digital tools (static archive; the old wiki.digitalsquare.io domain expired and now redirects to an unrelated site)
 - [Open Source Policy Guide](https://github.com/todogroup/ospology) - policy frameworks and OSPO guidance for government open-source adoption
 - [ITU Model Policy on Open Source](https://www.itu.int/) - ITU guidance for national open-source policies
 

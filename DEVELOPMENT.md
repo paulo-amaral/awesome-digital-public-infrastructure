@@ -34,7 +34,7 @@ cargo install lychee
 Then run:
 
 ```bash
-lychee README.MD CONTRIBUTING.md docs/**/*.md
+lychee --include-fragments README.MD CONTRIBUTING.md docs/**/*.md docs/index.html
 ```
 
 This catches broken links before you push.
