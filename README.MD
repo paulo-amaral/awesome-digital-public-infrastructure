@@ -229,13 +229,14 @@ Real country implementations with detailed profiles on what they built, what wor
 | 🇪🇪 Estonia | 1.4M | X-Road, e-Residency, KSI Blockchain, i-Voting | [Estonia](docs/country-profiles/estonia.md) |
 | 🇧🇷 Brazil | 215M | PIX, GOV.BR, Open Finance, Conecte SUS | [Brazil](docs/country-profiles/brazil.md) |
 | 🇹🇱 Timor-Leste | 1.3M | CPMIS, e-SISCA, RDTL digital services | [Timor-Leste](docs/country-profiles/timor-leste.md) |
+| 🇰🇭 Cambodia | 17M | [CamDX](https://camdx.gov.kh/) (data exchange, X-Road based), [CamDigiKey](https://camdx.gov.kh/docs/open-api/ekyc) (digital ID & e-KYC), [Bakong](https://bakong.nbc.gov.kh/) (blockchain payments), [verify.gov.kh](https://verify.gov.kh/) (document verification; Gold ASEAN Digital Awards 2024, UN Public Service Award 2026, launched in Timor-Leste, rollouts in Laos & Philippines) | [Cambodia](docs/country-profiles/cambodia.md) |
 | 🇰🇪 Kenya | 55M | Huduma Namba, M-Pesa, eCitizen | coming soon |
 | 🇷🇼 Rwanda | 14M | Irembo, National ID, mobile money | coming soon |
 | 🇵🇭 Philippines | 115M | PhilSys, InstaPay, eGovPH | coming soon |
 | 🇸🇳 Senegal | 17M | Wari, Orange Money, DER programs | coming soon |
 | 🇹🇹 Trinidad & Tobago | 1.4M | First DaaS implementation — verifiable credentials at national scale (2025) | coming soon |
 | 🇫🇯 Fiji | 900K | Digital Fiji strategy, mHealth pilots | coming soon |
-| 🇰🇭 Cambodia | 17M | [CamDX](https://camdx.gov.kh/) (data exchange, X-Road inspired), [CamDigiKey](https://camdx.gov.kh/docs/open-api/ekyc) (digital ID & e-KYC), [verify.gov.kh](https://verify.gov.kh/) (QR + blockchain document verification, Gold ASEAN Digital Awards 2024, adopted by Philippines) | coming soon |
+| 🇲🇿 Mozambique | 34M | Early-stage talks: [X-Road](https://x-road.global/)-based data exchange with single-window services (balcão único), exploring Ethiopia's [Fayda](https://id.gov.et/) eKYC model (MOSIP-based) | coming soon |
 
 ### 🌎 Regional & Cross-Border DPI
 
