@@ -17,7 +17,7 @@ Detailed profiles of national Digital Public Infrastructure implementations. Eac
 Use the template below. Submit via pull request to `docs/country-profiles/`.
 
 ```markdown
-# Country Name — DPI Profile
+# Country Name - DPI Profile
 
 ## Overview
 [1-2 paragraph summary of the country's digital transformation journey]
@@ -31,7 +31,7 @@ Use the template below. Submit via pull request to `docs/country-profiles/`.
 | Data Exchange | ... | Live / Pilot | Yes/No |
 
 ## Open-Source Tools in Use
-- [Tool](url) — how it is used
+- [Tool](url) - how it is used
 
 ## Key Milestones
 - YYYY: ...

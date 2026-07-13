@@ -1,10 +1,10 @@
-# Timor-Leste — DPI Profile
+# Timor-Leste - DPI Profile
 
 ## Overview
 
 Timor-Leste (East Timor) is one of Asia's youngest nations, gaining independence in 2002. With a population of approximately 1.3 million across a mountainous terrain and 13 municipalities, the country faces significant infrastructure challenges: limited electricity coverage, sparse internet connectivity, and a public workforce still developing digital skills.
 
-Despite these constraints, Timor-Leste has made meaningful progress in specific DPI domains — particularly in health information management, child protection data systems, and government administrative digitization. The country offers an important case study of **DPI in fragile state contexts**: where ambition must be calibrated to infrastructure reality, and where UN agencies and international partners play an outsized role in both funding and implementation.
+Despite these constraints, Timor-Leste has made meaningful progress in specific DPI domains - particularly in health information management, child protection data systems, and government administrative digitization. The country offers an important case study of **DPI in fragile state contexts**: where ambition must be calibrated to infrastructure reality, and where UN agencies and international partners play an outsized role in both funding and implementation.
 
 ## DPI Stack
 
@@ -18,13 +18,13 @@ Despite these constraints, Timor-Leste has made meaningful progress in specific 
 | Government Portal | [RDTL.tl](https://www.rdtl.tl/) | Partial | MICS |
 | Community Health | SISCA (paper + digital) | Partial | MoH, WHO |
 
-## CPMIS — Child Protection Management Information System
+## CPMIS - Child Protection Management Information System
 
 The **CPMIS** (Child Protection MIS) is a purpose-built data pipeline developed with UNICEF support in 2025–2026 to monitor child protection indicators across 4 ministries:
 
 | Ministry | Indicator Monitored |
 |----------|---------------------|
-| MSSI (Social Solidarity) | Regulations & SOPs — Lei N.º 9/2022 |
+| MSSI (Social Solidarity) | Regulations & SOPs - Lei N.º 9/2022 |
 | MoJ (Justice) | Child-Friendly Justice Frameworks |
 | MoI / PNTL (Interior/Police) | Child Homicide Rate per 100,000 |
 | MoE (Education) | School Attendance Rate, ages 6–18 |
@@ -43,21 +43,21 @@ The **CPMIS** (Child Protection MIS) is a purpose-built data pipeline developed 
 
 ## Open-Source Tools in Use
 
-- [KoboToolbox](https://www.kobotoolbox.org/) — Primary data collection platform across humanitarian programs
-- [DHIS2](https://dhis2.org/) — Health information system (MoH, limited deployment)
-- [Primero](https://www.primero.org/) — Child protection case management (UNICEF-supported rollout)
-- [Google Apps Script](https://developers.google.com/apps-script) — Automation layer for CPMIS pipeline
-- [Looker Studio](https://lookerstudio.google.com/) — Dashboard visualization (free tier)
+- [KoboToolbox](https://www.kobotoolbox.org/) - Primary data collection platform across humanitarian programs
+- [DHIS2](https://dhis2.org/) - Health information system (MoH, limited deployment)
+- [Primero](https://www.primero.org/) - Child protection case management (UNICEF-supported rollout)
+- [Google Apps Script](https://developers.google.com/apps-script) - Automation layer for CPMIS pipeline
+- [Looker Studio](https://lookerstudio.google.com/) - Dashboard visualization (free tier)
 
 ## Key Milestones
 
-- **2002:** Independence — digital infrastructure built from near-zero
+- **2002:** Independence - digital infrastructure built from near-zero
 - **2010s:** e-SISCA health information system piloted in select municipalities
 - **2016:** National Statistics Directorate (DNE) begins digital data collection pilots
-- **2022:** Lei N.º 9/2022 — Child Protection Law enacted, creating mandatory reporting framework
+- **2022:** Lei N.º 9/2022 - Child Protection Law enacted, creating mandatory reporting framework
 - **2024:** UNICEF CP Section begins CPMIS design with 4 ministries
 - **2025:** CPMIS KoboToolbox forms deployed and tested with ministry focal points
-- **2026:** CPMIS full rollout — automated quarterly reporting pipeline operational
+- **2026:** CPMIS full rollout - automated quarterly reporting pipeline operational
 
 ## Lessons Learned
 
@@ -93,8 +93,8 @@ These lessons reflect direct field experience from CPMIS implementation:
 ## References
 
 - [UNICEF Timor-Leste](https://www.unicef.org/timorleste/)
-- [Government of Timor-Leste — RDTL](https://www.rdtl.tl/)
-- [Ministry of Health — MoH](https://www.moh.gov.tl/)
-- [MSSI — Ministry of Social Solidarity & Inclusion](https://www.mssi.gov.tl/)
+- [Government of Timor-Leste - RDTL](https://www.rdtl.tl/)
+- [Ministry of Health - MoH](https://www.moh.gov.tl/)
+- [MSSI - Ministry of Social Solidarity & Inclusion](https://www.mssi.gov.tl/)
 - [World Bank: Timor-Leste Digital Economy](https://www.worldbank.org/en/country/timor-leste)
 - [UNDP Timor-Leste Digital Transformation](https://www.undp.org/timor-leste)

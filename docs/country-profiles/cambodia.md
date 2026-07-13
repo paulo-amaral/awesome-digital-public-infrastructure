@@ -1,4 +1,4 @@
-# Cambodia — DPI Profile
+# Cambodia - DPI Profile
 
 ## Overview
 
@@ -16,7 +16,7 @@ Cambodia is also becoming a **DPI exporter**. Its document verification platform
 | Document Verification | [verify.gov.kh](https://verify.gov.kh/) | Live, exported regionally | Blockchain-based |
 | Business Registration | Online Business Registration (single portal on CamDX) | Live | Built on CamDX |
 
-## CamDX — Cambodia Data Exchange
+## CamDX - Cambodia Data Exchange
 
 CamDX was developed and is operated by the **Techo Startup Center**, a delivery unit under the Ministry of Economy and Finance. Its Executive Director, Dr. Nguonly Taing, initiated the project after a 2019 study visit to Estonia, and the platform was deployed in 2020.
 
@@ -26,13 +26,13 @@ The launch use case was **online business registration**: before CamDX, multi-mi
 
 In November 2022, UNDP and partners recognized CamDX as the "open source adaptation of the year."
 
-## Bakong — Blockchain-Based Payments
+## Bakong - Blockchain-Based Payments
 
 The National Bank of Cambodia (NBC) launched Bakong in October 2020, developed with the Japanese firm Soramitsu on the open-source **Hyperledger Iroha** framework. The NBC runs the core system and delegates payment gateways to commercial banks and financial institutions; end users connect through those gateways. Bakong supports fiat-backed digital representations of both the Khmer riel and the US dollar, and one of its stated policy goals is to promote riel usage in a heavily dollarized economy.
 
 Growth has been steep: by 2023, the NBC reported 19.5 million accounts opened in total (many reached indirectly through member bank apps). In 2024, Bakong processed 608 million transactions worth US$104.8 billion, roughly 330% of Cambodia's GDP and a 95% increase over 2023. Cross-border QR payments with China's UnionPay launched in March 2023.
 
-## verify.gov.kh — Document Verification as an Export
+## verify.gov.kh - Document Verification as an Export
 
 Developed by the Ministry of Post and Telecommunications (MPTC) using blockchain, AI, and hybrid cloud infrastructure, verify.gov.kh authenticates government-issued documents via QR codes.
 
@@ -42,8 +42,8 @@ Developed by the Ministry of Post and Telecommunications (MPTC) using blockchain
 
 ## Open-Source Tools in Use
 
-- [X-Road](https://x-road.global/) — foundation of CamDX, the national data exchange layer
-- [Hyperledger Iroha](https://www.lfdecentralizedtrust.org/case-studies/soramitsu-case-study) — blockchain framework underlying Bakong
+- [X-Road](https://x-road.global/) - foundation of CamDX, the national data exchange layer
+- [Hyperledger Iroha](https://www.lfdecentralizedtrust.org/case-studies/soramitsu-case-study) - blockchain framework underlying Bakong
 
 ## Key Milestones
 
@@ -82,10 +82,10 @@ Developed by the Ministry of Post and Telecommunications (MPTC) using blockchain
 
 ## References
 
-- [CamDX — Cambodia Data Exchange](https://camdx.gov.kh/)
+- [CamDX - Cambodia Data Exchange](https://camdx.gov.kh/)
 - [X-Road case study: CamDX is Cambodia's national data exchange solution](https://x-road.global/xroad-case-studies-library/2024/10/21/camdx-is-cambodias-national-data-exchange-solution-and-its-based-on-x-road)
 - [OECD OPSI: CamDX](https://oecd-opsi.org/innovations/camdx-2/)
-- [Bakong White Paper — National Bank of Cambodia (PDF)](https://bakong.nbc.gov.kh/download/NBC_BAKONG_White_Paper.pdf)
+- [Bakong White Paper - National Bank of Cambodia (PDF)](https://bakong.nbc.gov.kh/download/NBC_BAKONG_White_Paper.pdf)
 - [Soramitsu: Cambodia implements a digital currency](https://soramitsu.co.jp/cambodia-bakong/)
 - [Hyperledger case study: National Bank of Cambodia](https://www.lfdecentralizedtrust.org/case-studies/soramitsu-case-study)
 - [MPTC: verify.gov.kh wins Gold in ASEAN Digital Awards 2024](https://mptc.gov.kh/en/2024/02/cambodias-verify-gov-kh-document-verification-platform-wins-gold-in-asean-digital-awards-2024/)

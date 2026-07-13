@@ -6,8 +6,14 @@
   <title>Awesome Digital Public Infrastructure</title>
   <meta name="description" content="A curated list of DPI and DPG resources, tools, frameworks, and country implementations." />
 
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="preload" href="fonts/Web/AinoWeb-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/Web/AinoWeb-Headline.woff2" as="font" type="font/woff2" crossorigin />
+
   <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- flag-icons: SVG country flags -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/css/flag-icons.min.css" />
 
   <style>
     /* ── AINO TYPEFACE (Brand Estonia) ─────────────── */
@@ -59,14 +65,14 @@
       --blue-dk:  #0000b4;   /* Kolga */
       --blue-lm:  #0062f5;   /* Paldiski */
       /* Neutral (Rändrahnud) */
-      --pahkla:   #f0f1f2;   /* Pahkla — lightest */
-      --hellamaa: #cfd1d2;   /* Hellamaa — border */
+      --pahkla:   #f0f1f2;   /* Pahkla · lightest */
+      --hellamaa: #cfd1d2;   /* Hellamaa · border */
       --muted:    #575a5d;   /* Majakivi */
       --text:     #323334;   /* Mustkivi */
       /* Accent */
       --yellow:   #e1e000;   /* Tudu */
-      --ratva:    #d6e6fd;   /* Ratva — light blue */
-      --soomaa:   #d1ecde;   /* Soomaa — light green */
+      --ratva:    #d6e6fd;   /* Ratva · light blue */
+      --soomaa:   #d1ecde;   /* Soomaa · light green */
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -139,6 +145,7 @@
       font-size: 0.9rem;
       text-decoration: none;
       border: 2px solid transparent;
+      border-radius: 999px;
       cursor: pointer;
       transition: background 0.15s, color 0.15s;
     }
@@ -241,7 +248,6 @@
       padding-bottom: 12px;
       border-bottom: 3px solid var(--blue);
     }
-    h2 i { color: var(--blue); font-size: 1rem; }
 
     /* ── SECTION CARDS ─────────────────────────────── */
     .card-grid {
@@ -252,7 +258,7 @@
     .card {
       background: #fff;
       border: 1px solid var(--hellamaa);
-      border-radius: 12px;
+      border-radius: 0;
       padding: 22px;
       text-decoration: none;
       color: inherit;
@@ -261,12 +267,12 @@
       flex-direction: column;
       gap: 6px;
     }
-    .card:hover { box-shadow: 0 8px 28px rgba(0,0,240,0.09); transform: translateY(-3px); }
+    .card:hover { border-color: var(--blue); }
     .card-icon {
       width: 40px;
       height: 40px;
       background: var(--ratva);
-      border-radius: 10px;
+      border-radius: 0;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -286,7 +292,7 @@
       padding: 2px 10px;
       background: var(--ratva);
       color: var(--blue);
-      border-radius: 20px;
+      border-radius: 0;
       align-self: flex-start;
       margin-top: 4px;
     }
@@ -300,15 +306,22 @@
     .country-card {
       background: #fff;
       border: 1px solid var(--hellamaa);
-      border-radius: 12px;
+      border-radius: 0;
       padding: 24px;
       text-decoration: none;
       color: inherit;
       transition: box-shadow 0.2s, transform 0.2s;
       display: block;
     }
-    .country-card:hover { box-shadow: 0 8px 28px rgba(0,0,240,0.09); transform: translateY(-3px); }
+    .country-card:hover { border-color: var(--blue); }
     .country-card .flag { font-size: 2rem; margin-bottom: 10px; display: block; }
+    .country-card .flag.fi {
+      font-size: 1.6rem;
+      width: 2.133em;
+      border-radius: 0;
+      box-shadow: inset 0 0 0 1px rgba(50,51,52,0.12);
+    }
+    .country-card .flag i { color: var(--blue); font-size: 1.7rem; }
     .country-card h3 {
       font-size: 1rem;
       font-weight: 700;
@@ -325,7 +338,7 @@
       padding: 3px 8px;
       background: var(--ratva);
       color: var(--blue-dk);
-      border-radius: 3px;
+      border-radius: 0;
     }
 
     /* ── DOMAIN GRID ───────────────────────────────── */
@@ -337,7 +350,7 @@
     .domain-pill {
       background: #fff;
       border: 1px solid var(--hellamaa);
-      border-radius: 10px;
+      border-radius: 0;
       padding: 18px 12px;
       text-align: center;
       text-decoration: none;
@@ -345,7 +358,7 @@
       transition: background 0.15s, color 0.15s, box-shadow 0.15s;
       display: block;
     }
-    .domain-pill:hover { background: var(--blue); color: #fff; box-shadow: 0 4px 16px rgba(0,0,240,0.2); }
+    .domain-pill:hover { background: var(--blue); color: #fff; }
     .domain-pill:hover i { color: #fff; }
     .domain-pill i {
       display: block;
@@ -359,7 +372,7 @@
     .field-notes-box {
       border: 1px solid var(--hellamaa);
       border-top: 4px solid var(--blue);
-      border-radius: 12px;
+      border-radius: 0;
       overflow: hidden;
     }
     .field-notes-box .fn-header {
@@ -421,7 +434,7 @@
     .link-item {
       background: #fff;
       border: 1px solid var(--hellamaa);
-      border-radius: 12px;
+      border-radius: 0;
       padding: 20px;
       text-decoration: none;
       color: inherit;
@@ -430,7 +443,7 @@
       gap: 6px;
       transition: box-shadow 0.2s, transform 0.2s;
     }
-    .link-item:hover { box-shadow: 0 8px 28px rgba(0,0,240,0.09); transform: translateY(-2px); }
+    .link-item:hover { border-color: var(--blue); }
     .link-item:hover .link-title { color: var(--blue); }
     .link-meta {
       display: flex;
@@ -470,7 +483,7 @@
     .paper-list {
       border: 1px solid var(--hellamaa);
       border-top: 3px solid var(--blue);
-      border-radius: 12px;
+      border-radius: 0;
       overflow: hidden;
       margin-bottom: 12px;
     }
@@ -574,20 +587,19 @@
       color: #fff;
     }
     .contribute-strip h2 i { color: rgba(255,255,255,0.7); }
-    .contribute-strip p { font-size: 0.92rem; color: rgba(255,255,255,0.75); max-width: 420px; }
+    .contribute-strip p { font-size: 0.92rem; color: rgba(255,255,255,0.88); max-width: 420px; }
     .btn-yellow {
       background: var(--yellow);
       color: var(--text);
       border-color: var(--yellow);
       font-weight: 700;
-      border-radius: 6px;
     }
     .btn-yellow:hover { background: #fff; border-color: #fff; color: var(--blue); }
 
     /* ── FOOTER ────────────────────────────────────── */
     footer {
       background: #0a0a1e;
-      color: rgba(255,255,255,0.55);
+      color: rgba(255,255,255,0.72);
       padding: 36px 24px;
       font-size: 0.82rem;
     }
@@ -605,8 +617,16 @@
 
     /* ── ACCESSIBILITY / FOCUS ─────────────────────── */
     :focus-visible {
-      outline: 3px solid var(--yellow);
+      outline: 3px solid var(--blue);
       outline-offset: 2px;
+    }
+    .hero :focus-visible, .contribute-strip :focus-visible, footer :focus-visible {
+      outline-color: var(--yellow);
+    }
+    h1, h2, h3 { text-wrap: balance; }
+    @media (prefers-reduced-motion: reduce) {
+      * { transition-duration: 0.01ms !important; }
+      .card:hover, .country-card:hover, .link-item:hover { transform: none; }
     }
     .skip-link {
       position: absolute;
@@ -641,7 +661,7 @@
   <div class="hero-inner">
     <span class="hero-label">Open Resource List</span>
     <h1>Awesome <em>Digital Public Infrastructure</em></h1>
-    <p>A curated list of DPI and DPG resources — open-source solutions, frameworks, country stacks, and field-tested insights for governments, UN agencies, NGOs, and developers.</p>
+    <p>A curated list of DPI and DPG resources · open-source solutions, frameworks, country stacks, and field-tested insights for governments, UN agencies, NGOs, and developers.</p>
     <div class="hero-badges">
       <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
       <a href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure/blob/main/CONTRIBUTING.md">
@@ -650,13 +670,13 @@
     </div>
     <div class="hero-cta">
       <a class="btn btn-primary" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure">
-        <i class="fa-brands fa-github"></i> View on GitHub
+        <i aria-hidden="true" class="fa-brands fa-github"></i> View on GitHub
       </a>
       <a class="btn btn-outline" href="https://dpimap.org/" target="_blank" rel="noopener">
-        <i class="fa-solid fa-map-location-dot"></i> DPI Map
+        <i aria-hidden="true" class="fa-solid fa-map-location-dot"></i> DPI Map
       </a>
       <a class="btn btn-outline" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure/issues/new/choose">
-        <i class="fa-solid fa-plus"></i> Add Resource
+        <i aria-hidden="true" class="fa-solid fa-plus"></i> Add Resource
       </a>
     </div>
   </div>
@@ -667,7 +687,7 @@
   <div class="stats-inner">
     <div class="stat"><strong>140+</strong><span>Certified DPGs</span></div>
     <div class="stat"><strong>50+</strong><span>Countries building DPI</span></div>
-    <div class="stat"><strong>3</strong><span>Country deep-dives</span></div>
+    <div class="stat"><strong>5</strong><span>Country deep-dives</span></div>
     <div class="stat"><strong>8</strong><span>Domains covered</span></div>
   </div>
 </div>
@@ -679,21 +699,21 @@
     <div>
       <a href="https://documents1.worldbank.org/curated/en/099031025172027713/pdf/P505739-84c5073b-9d40-4b83-a211-98b2263e87dd.pdf"
          target="_blank" rel="noopener">Digital Public Infrastructure and Development: A World Bank Group Approach</a>
-      — Digital Transformation White Paper Vol. 1, World Bank (2025)
+      · Digital Transformation White Paper Vol. 1, World Bank (2025)
     </div>
   </div>
   <div class="featured">
     <span class="featured-badge">New</span>
     <div>
       <a href="https://dial.global/wp-content/uploads/2026/03/Updated-2026-DPI-Roadmap.pdf" target="_blank" rel="noopener">DPI Roadmap Playbook</a>
-      — Practical guide for governments designing national DPI strategies, DIAL (2026)
+      · Practical guide for governments designing national DPI strategies, DIAL (2026)
     </div>
   </div>
   <div class="featured">
     <span class="featured-badge">Toolkit</span>
     <div>
       <a href="https://www.undp.org/sites/g/files/zskgke326/files/2023-08/undp-the-dpi-approach-a-playbook.pdf" target="_blank" rel="noopener">UNDP DPI Approach Playbook</a>
-      — Direct PDF toolkit with six practical plays for scoping, technology, governance, sustainability, and implementation;
+      · Direct PDF toolkit with six practical plays for scoping, technology, governance, sustainability, and implementation;
       <a href="https://un-two-zero.network/contents/the-digital-public-infrastructure-approach-a-playbook/" target="_blank" rel="noopener">UN 2.0 overview</a>
     </div>
   </div>
@@ -704,41 +724,41 @@
 
   <!-- DOMAINS -->
   <section class="section">
-    <h2><i class="fa-solid fa-layer-group"></i> DPG Domains</h2>
+    <h2>DPG Domains</h2>
     <div class="domain-grid">
-      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-health">
-        <i class="fa-solid fa-heart-pulse"></i><span>Health</span>
+      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#health">
+        <i aria-hidden="true" class="fa-solid fa-heart-pulse"></i><span>Health</span>
       </a>
-      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#%EF%A3%BF-identity--civil-registration">
-        <i class="fa-solid fa-id-card"></i><span>Identity</span>
+      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#identity--civil-registration">
+        <i aria-hidden="true" class="fa-solid fa-id-card"></i><span>Identity</span>
       </a>
-      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-payments--financial-inclusion">
-        <i class="fa-solid fa-credit-card"></i><span>Payments</span>
+      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#payments--financial-inclusion">
+        <i aria-hidden="true" class="fa-solid fa-credit-card"></i><span>Payments</span>
       </a>
-      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-education">
-        <i class="fa-solid fa-graduation-cap"></i><span>Education</span>
+      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#education">
+        <i aria-hidden="true" class="fa-solid fa-graduation-cap"></i><span>Education</span>
       </a>
       <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#civic-participation--democratic-governance">
-        <i class="fa-solid fa-comments"></i><span>Civic Participation</span>
+        <i aria-hidden="true" class="fa-solid fa-comments"></i><span>Civic Participation</span>
       </a>
-      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-climate--environment">
-        <i class="fa-solid fa-leaf"></i><span>Climate</span>
+      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#climate--environment">
+        <i aria-hidden="true" class="fa-solid fa-leaf"></i><span>Climate</span>
       </a>
-      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-data-exchange--interoperability">
-        <i class="fa-solid fa-arrows-rotate"></i><span>Data Exchange</span>
+      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#data-exchange--interoperability">
+        <i aria-hidden="true" class="fa-solid fa-arrows-rotate"></i><span>Data Exchange</span>
       </a>
-      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#%EF%B8%8F-child-protection--social-protection">
-        <i class="fa-solid fa-shield-halved"></i><span>Social Protection</span>
+      <a class="domain-pill" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#child-protection--social-protection">
+        <i aria-hidden="true" class="fa-solid fa-shield-halved"></i><span>Social Protection</span>
       </a>
     </div>
   </section>
 
   <!-- COUNTRY PROFILES -->
   <section class="section">
-    <h2><i class="fa-solid fa-earth-asia"></i> Country DPI Profiles</h2>
+    <h2>Country DPI Profiles</h2>
     <div class="country-grid">
       <a class="country-card" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure/blob/main/docs/country-profiles/india.md" target="_blank" rel="noopener">
-        <span class="flag">🇮🇳</span>
+        <span class="flag fi fi-in" aria-hidden="true"></span>
         <h3>India</h3>
         <p>The world's most comprehensive DPI stack at 1.4B scale.</p>
         <div class="chips">
@@ -749,9 +769,9 @@
         </div>
       </a>
       <a class="country-card" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure/blob/main/docs/country-profiles/estonia.md" target="_blank" rel="noopener">
-        <span class="flag">🇪🇪</span>
+        <span class="flag fi fi-ee" aria-hidden="true"></span>
         <h3>Estonia</h3>
-        <p>World's most advanced digital society — X-Road, e-Residency, i-Voting.</p>
+        <p>World's most advanced digital society · X-Road, e-Residency, i-Voting.</p>
         <div class="chips">
           <span class="chip">X-Road</span>
           <span class="chip">e-Residency</span>
@@ -759,7 +779,7 @@
         </div>
       </a>
       <a class="country-card" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure/blob/main/docs/country-profiles/brazil.md" target="_blank" rel="noopener">
-        <span class="flag">🇧🇷</span>
+        <span class="flag fi fi-br" aria-hidden="true"></span>
         <h3>Brazil</h3>
         <p>PIX reached 100M users faster than any payment system in history.</p>
         <div class="chips">
@@ -769,7 +789,7 @@
         </div>
       </a>
       <a class="country-card" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure/blob/main/docs/country-profiles/cambodia.md" target="_blank" rel="noopener">
-        <span class="flag">🇰🇭</span>
+        <span class="flag fi fi-kh" aria-hidden="true"></span>
         <h3>Cambodia</h3>
         <p>CamDX data exchange (X-Road based), Bakong blockchain payments, and verify.gov.kh: Gold at ASEAN Digital Awards 2024, UN Public Service Award 2026, launched in Timor-Leste.</p>
         <div class="chips">
@@ -779,7 +799,7 @@
         </div>
       </a>
       <a class="country-card" href="https://redgealc.org/idlac/en/home/" target="_blank" rel="noopener">
-        <span class="flag">🌎</span>
+        <span class="flag" aria-hidden="true"><i aria-hidden="true" class="fa-solid fa-earth-americas"></i></span>
         <h3>IdLAC</h3>
         <p>Regional ID broker for mutual recognition of national eIDs across Latin America and the Caribbean, starting from cross-border public service access between Brazil and Uruguay.</p>
         <div class="chips">
@@ -793,7 +813,7 @@
 
   <!-- FRAMEWORKS -->
   <section class="section">
-    <h2><i class="fa-solid fa-ruler-combined"></i> Key DPI Frameworks</h2>
+    <h2>Key DPI Frameworks</h2>
     <div class="link-grid">
       <a class="link-item" href="https://digitalpublicgoods.net/standard/" target="_blank" rel="noopener">
         <div class="link-meta">
@@ -905,7 +925,7 @@
           <span class="link-tag">Regulation</span>
         </div>
         <div class="link-title">EU AI Act</div>
-        <div class="link-desc">World's first comprehensive AI regulation — risk-based, binding for EU, reference globally.</div>
+        <div class="link-desc">World's first comprehensive AI regulation · risk-based, binding for EU, reference globally.</div>
       </a>
       <a class="link-item" href="https://www.unesco.org/en/artificial-intelligence/recommendation-ethics" target="_blank" rel="noopener">
         <div class="link-meta">
@@ -945,22 +965,22 @@
           <span class="link-tag">Programme</span>
         </div>
         <div class="link-title">BMZ Digital.Global</div>
-        <div class="link-desc">German Federal Ministry digital development programme — umbrella for GovStack, FAIR Forward (AI), atingi (digital skills), and Digital Transformation Centers worldwide.</div>
+        <div class="link-desc">German Federal Ministry digital development programme · umbrella for GovStack, FAIR Forward (AI), atingi (digital skills), and Digital Transformation Centers worldwide.</div>
       </a>
       <a class="link-item" href="https://www.undp.org/digital/aila" target="_blank" rel="noopener">
         <div class="link-meta">
           <span class="link-org">UNDP</span>
           <span class="link-tag">Assessment</span>
         </div>
-        <div class="link-title">AILA — AI Landscape Assessment</div>
-        <div class="link-desc">UNDP's national AI readiness framework — assesses government, private sector, civil society and academia; deployed in 15+ countries since 2024.</div>
+        <div class="link-title">AILA · AI Landscape Assessment</div>
+        <div class="link-desc">UNDP's national AI readiness framework · assesses government, private sector, civil society and academia; deployed in 15+ countries since 2024.</div>
       </a>
       <a class="link-item" href="https://www.undp.org/digital/dra" target="_blank" rel="noopener">
         <div class="link-meta">
           <span class="link-org">UNDP</span>
           <span class="link-tag">Assessment</span>
         </div>
-        <div class="link-title">DRA — Digital Readiness Assessment</div>
+        <div class="link-title">DRA · Digital Readiness Assessment</div>
         <div class="link-desc">UNDP's cross-cutting digital readiness tool covering five pillars (people, connectivity, government, regulation, economy); deployed in 50+ countries.</div>
       </a>
       <a class="link-item" href="https://digitaldevelopmentcompass.undp.org/" target="_blank" rel="noopener">
@@ -977,7 +997,7 @@
           <span class="link-tag">Capacity</span>
         </div>
         <div class="link-title">Digital Competency Framework</div>
-        <div class="link-desc">UNESCO framework for strengthening digital skills and institutional capacity in government — supports civil servants and policymakers in leading digital transformation.</div>
+        <div class="link-desc">UNESCO framework for strengthening digital skills and institutional capacity in government · supports civil servants and policymakers in leading digital transformation.</div>
       </a>
       <a class="link-item" href="https://www.w3.org/WAI/fundamentals/accessibility-principles/" target="_blank" rel="noopener">
         <div class="link-meta">
@@ -1001,7 +1021,7 @@
           <span class="link-tag">Legal XML</span>
         </div>
         <div class="link-title">Akoma Ntoso (LegalDocML v1.0)</div>
-        <div class="link-desc">Open XML standard for parliamentary, legislative, and judicial documents — adopted by the UN, UK National Archives, US Congress, and Brazil. Name means "linked hearts" in Akan.</div>
+        <div class="link-desc">Open XML standard for parliamentary, legislative, and judicial documents · adopted by the UN, UK National Archives, US Congress, and Brazil. Name means "linked hearts" in Akan.</div>
       </a>
       <a class="link-item" href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=legalruleml" target="_blank" rel="noopener">
         <div class="link-meta">
@@ -1009,7 +1029,7 @@
           <span class="link-tag">Legal Rules</span>
         </div>
         <div class="link-title">LegalRuleML</div>
-        <div class="link-desc">OASIS standard for the logical-formal representation of legal norms as machine-readable rules — enables automated compliance checking and temporal legal reasoning.</div>
+        <div class="link-desc">OASIS standard for the logical-formal representation of legal norms as machine-readable rules · enables automated compliance checking and temporal legal reasoning.</div>
       </a>
       <a class="link-item" href="https://site.unibo.it/leds4xail/en/" target="_blank" rel="noopener">
         <div class="link-meta">
@@ -1017,17 +1037,17 @@
           <span class="link-tag">Research</span>
         </div>
         <div class="link-title">CIRSFID / LEDS4XAIL</div>
-        <div class="link-desc">Leading research centre in legal informatics and explainable AI — home of Akoma Ntoso co-author Monica Palmirani; covers eLegislation, legal reasoning, knowledge representation, eJustice, and digital rights.</div>
+        <div class="link-desc">Leading research centre in legal informatics and explainable AI · home of Akoma Ntoso co-author Monica Palmirani; covers eLegislation, legal reasoning, knowledge representation, eJustice, and digital rights.</div>
       </a>
     </div>
-    <a class="see-more" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-frameworks--standards">
-      All frameworks on GitHub <i class="fa-solid fa-arrow-right"></i>
+    <a class="see-more" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#frameworks--standards">
+      All frameworks on GitHub <i aria-hidden="true" class="fa-solid fa-arrow-right"></i>
     </a>
   </section>
 
   <!-- PAPERS -->
   <section class="section">
-    <h2><i class="fa-solid fa-book-open"></i> Key Papers & Reports</h2>
+    <h2>Key Papers & Reports</h2>
     <div class="paper-list">
       <a class="paper-item" href="https://dial.global/wp-content/uploads/2026/03/Updated-2026-DPI-Roadmap.pdf" target="_blank" rel="noopener">
         <div class="paper-left">
@@ -1036,9 +1056,9 @@
         </div>
         <div class="paper-right">
           <div class="paper-title">DPI Roadmap Playbook</div>
-          <div class="paper-desc">Practical guide by DIAL, AfricaNenda, Better Than Cash Alliance, and CDPI for governments designing national DPI strategies — covers trade-offs, intra-governmental alignment, and steps to set priorities, milestones, and timelines. Works for countries at any stage.</div>
+          <div class="paper-desc">Practical guide by DIAL, AfricaNenda, Better Than Cash Alliance, and CDPI for governments designing national DPI strategies · covers trade-offs, intra-governmental alignment, and steps to set priorities, milestones, and timelines. Works for countries at any stage.</div>
         </div>
-        <i class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
+        <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
       </a>
       <a class="paper-item" href="https://www.ucl.ac.uk/bartlett/publications/2025/nov/2025-state-digital-public-infrastructure-report" target="_blank" rel="noopener">
         <div class="paper-left">
@@ -1049,7 +1069,7 @@
           <div class="paper-title">2025 State of Digital Public Infrastructure Report</div>
           <div class="paper-desc">Global baseline on DPI measurement, prevalence, and maturity across digital ID, payments, and data exchange in 210 countries.</div>
         </div>
-        <i class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
+        <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
       </a>
       <a class="paper-item" href="https://www.deloitte.com/gr/en/Industries/government-public/about/government-trends-2025.html" target="_blank" rel="noopener">
         <div class="paper-left">
@@ -1060,7 +1080,7 @@
           <div class="paper-title">Government Trends 2025: Built to Deliver</div>
           <div class="paper-desc">Nine trends on strengthening government's capacity to deliver large-scale priorities, improve speed and effectiveness, and respond to rising citizen expectations.</div>
         </div>
-        <i class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
+        <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
       </a>
       <a class="paper-item" href="https://www.deloitte.com/content/dam/assets-zone3/us/en/docs/industries/government-public-services/2024/in-ps-dpi-playbook-brand-noexp.pdf" target="_blank" rel="noopener">
         <div class="paper-left">
@@ -1071,7 +1091,7 @@
           <div class="paper-title">Digital Public Infrastructure Playbook</div>
           <div class="paper-desc">Direct PDF playbook for DPI strategy, design, and implementation planning from a government and public services perspective.</div>
         </div>
-        <i class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
+        <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
       </a>
       <a class="paper-item" href="https://un-two-zero.network/contents/the-digital-public-infrastructure-approach-a-playbook/" target="_blank" rel="noopener">
         <div class="paper-left">
@@ -1082,7 +1102,7 @@
           <div class="paper-title">The DPI Approach: A Playbook</div>
           <div class="paper-desc">Practical public resource for countries starting inclusive, rights-based DPI, with checklists, assessment tools, and case studies.</div>
         </div>
-        <i class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
+        <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
       </a>
       <a class="paper-item" href="https://www.digitalpublicgoods.net/blog/2025-dpg-ecosystem-report" target="_blank" rel="noopener">
         <div class="paper-left">
@@ -1093,7 +1113,7 @@
           <div class="paper-title">2025 State of the Digital Public Goods Ecosystem</div>
           <div class="paper-desc">Latest DPGA report on verified DPG growth, financing, governance, and the value of DPGs for DPI.</div>
         </div>
-        <i class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
+        <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
       </a>
       <a class="paper-item" href="https://documents1.worldbank.org/curated/en/099031025172027713/pdf/P505739-84c5073b-9d40-4b83-a211-98b2263e87dd.pdf" target="_blank" rel="noopener">
         <div class="paper-left">
@@ -1104,7 +1124,7 @@
           <div class="paper-title">Digital Public Infrastructure and Development: A World Bank Group Approach</div>
           <div class="paper-desc">The definitive WBG position paper on DPI strategy, investment, and implementation. Vol. 1 of the Digital Transformation White Paper series.</div>
         </div>
-        <i class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
+        <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
       </a>
       <a class="paper-item" href="https://dhis2.org/impact/" target="_blank" rel="noopener">
         <div class="paper-left">
@@ -1113,9 +1133,9 @@
         </div>
         <div class="paper-right">
           <div class="paper-title">30 Years of Health Information Infrastructure</div>
-          <div class="paper-desc">Impact evidence from 100+ country deployments — the canonical case study for open-source DPI at scale.</div>
+          <div class="paper-desc">Impact evidence from 100+ country deployments · the canonical case study for open-source DPI at scale.</div>
         </div>
-        <i class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
+        <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
       </a>
       <a class="paper-item" href="https://indiastack.org/" target="_blank" rel="noopener">
         <div class="paper-left">
@@ -1124,9 +1144,9 @@
         </div>
         <div class="paper-right">
           <div class="paper-title">India Stack Impact Report</div>
-          <div class="paper-desc">1.3B digital identities, $2T+ in UPI transactions — the most documented DPI outcome in history.</div>
+          <div class="paper-desc">1.3B digital identities, $2T+ in UPI transactions · the most documented DPI outcome in history.</div>
         </div>
-        <i class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
+        <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
       </a>
       <a class="paper-item" href="https://www3.weforum.org/docs/WEF_Rethinking_Digital_Public_Infrastructure.pdf" target="_blank" rel="noopener">
         <div class="paper-left">
@@ -1137,7 +1157,7 @@
           <div class="paper-title">Rethinking Digital Public Infrastructure</div>
           <div class="paper-desc">WEF analysis of DPI governance models, private-public collaboration, and risks of capture.</div>
         </div>
-        <i class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
+        <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
       </a>
       <a class="paper-item" href="https://www.bu.edu/gdp/" target="_blank" rel="noopener">
         <div class="paper-left">
@@ -1148,7 +1168,7 @@
           <div class="paper-title">The Case for a New Digital Bretton Woods</div>
           <div class="paper-desc">Boston University Global Development Policy Center on multilateral coordination for fair DPI governance.</div>
         </div>
-        <i class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
+        <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
       </a>
       <a class="paper-item" href="https://dial.global/research/economics-of-digital-public-infrastructure/" target="_blank" rel="noopener">
         <div class="paper-left">
@@ -1159,70 +1179,76 @@
           <div class="paper-title">DPI: A Moonshot for Equitable Growth</div>
           <div class="paper-desc">The founding case for DPI as the key lever for inclusive economic development in low-income countries.</div>
         </div>
-        <i class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
+        <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square paper-icon"></i>
       </a>
     </div>
-    <a class="see-more" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-research--reports">
-      All papers on GitHub <i class="fa-solid fa-arrow-right"></i>
+    <a class="see-more" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#research--reports">
+      All papers on GitHub <i aria-hidden="true" class="fa-solid fa-arrow-right"></i>
     </a>
   </section>
 
   <!-- MORE RESOURCES -->
   <section class="section">
-    <h2><i class="fa-solid fa-compass"></i> More Resources</h2>
+    <h2>More Resources</h2>
     <div class="card-grid">
-      <a class="card" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-toolkits--assessment-frameworks">
-        <div class="card-icon"><i class="fa-solid fa-toolbox"></i></div>
+      <a class="card" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#toolkits--assessment-frameworks">
+        <div class="card-icon"><i aria-hidden="true" class="fa-solid fa-toolbox"></i></div>
         <h3>Toolkits & Assessment</h3>
         <p>Digital readiness tools, interoperability frameworks, procurement guides.</p>
         <span class="tag">30+ resources</span>
       </a>
       <a class="card" href="https://50in5.net/" target="_blank" rel="noopener">
-        <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
+        <div class="card-icon"><i aria-hidden="true" class="fa-solid fa-globe"></i></div>
         <h3>50-in-5</h3>
         <p>Country-led campaign helping governments design, launch, and scale safe and inclusive DPI components.</p>
         <span class="tag">DPI coalition</span>
       </a>
       <a class="card" href="https://cdpi.dev/" target="_blank" rel="noopener">
-        <div class="card-icon"><i class="fa-solid fa-network-wired"></i></div>
+        <div class="card-icon"><i aria-hidden="true" class="fa-solid fa-network-wired"></i></div>
         <h3>CDPI</h3>
         <p>Pro bono DPI advisory, DaaS rapid deployment, architecture blueprints, and reusable implementation resources.</p>
         <span class="tag">25+ countries</span>
       </a>
+      <a class="card" href="https://github.com/paulo-amaral/xroad-simulator" target="_blank" rel="noopener">
+        <div class="card-icon"><i aria-hidden="true" class="fa-solid fa-server"></i></div>
+        <h3>X-Road Simulator</h3>
+        <p>Full X-Road sandbox on Docker Compose/Kubernetes: Central Server, test CA, Security Servers, eID/e-KYC, and a citizen portal. Built for Timor-Leste.</p>
+        <span class="tag">Sandbox</span>
+      </a>
       <a class="card" href="https://sandbox.govstack.global/" target="_blank" rel="noopener">
-        <div class="card-icon"><i class="fa-solid fa-flask"></i></div>
+        <div class="card-icon"><i aria-hidden="true" class="fa-solid fa-flask"></i></div>
         <h3>GovStack Sandbox</h3>
         <p>Developer environment for testing GovStack architecture and building-block interactions.</p>
         <span class="tag">Hands-on demo</span>
       </a>
       <a class="card" href="https://simulation.govstack.global/" target="_blank" rel="noopener">
-        <div class="card-icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <div class="card-icon"><i aria-hidden="true" class="fa-solid fa-diagram-project"></i></div>
         <h3>GovStack Simulation</h3>
         <p>Interactive social cash transfer use case showing how reusable building blocks fit together.</p>
         <span class="tag">Use case</span>
       </a>
-      <a class="card" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-organizations--communities">
-        <div class="card-icon"><i class="fa-solid fa-building-columns"></i></div>
+      <a class="card" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#organizations--communities">
+        <div class="card-icon"><i aria-hidden="true" class="fa-solid fa-building-columns"></i></div>
         <h3>Organizations</h3>
         <p>DPGA, UNICEF, UNDP, DIAL, Digital Square, Co-Develop, and more.</p>
         <span class="tag">15+ orgs</span>
       </a>
-      <a class="card" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#-courses--learning">
-        <div class="card-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+      <a class="card" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#courses--learning">
+        <div class="card-icon"><i aria-hidden="true" class="fa-solid fa-chalkboard-user"></i></div>
         <h3>Courses & Learning</h3>
         <p>Free MOOCs, certifications, and learning paths for DPI/DPG practitioners.</p>
         <span class="tag">8 courses</span>
       </a>
       <a class="card" href="https://www.digitalpublicgoods.net/collections/coll-dpi" target="_blank" rel="noopener">
-        <div class="card-icon"><i class="fa-solid fa-certificate"></i></div>
+        <div class="card-icon"><i aria-hidden="true" class="fa-solid fa-certificate"></i></div>
         <h3>DPGA DPI Collection</h3>
-        <p>Certified digital public goods mapped to DPI use cases — identity, payments, data exchange, and government transfers.</p>
+        <p>Certified digital public goods mapped to DPI use cases · identity, payments, data exchange, and government transfers.</p>
         <span class="tag">11 certified DPGs</span>
       </a>
       <a class="card" href="https://dpimap.org/" target="_blank" rel="noopener">
-        <div class="card-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+        <div class="card-icon"><i aria-hidden="true" class="fa-solid fa-map-location-dot"></i></div>
         <h3>DPI Map</h3>
-        <p>UCL IIPP interactive map tracking national DPI across 190+ countries — 68 with Digital ID, 99 with Digital Payments, 103 with Data Exchange systems.</p>
+        <p>UCL IIPP interactive map tracking national DPI across 190+ countries · 68 with Digital ID, 99 with Digital Payments, 103 with Data Exchange systems.</p>
         <span class="tag">190+ countries</span>
       </a>
     </div>
@@ -1230,57 +1256,57 @@
 
   <!-- FIELD NOTES TEASER -->
   <section class="section">
-    <h2><i class="fa-solid fa-campground"></i> Field Notes</h2>
+    <h2>Field Notes</h2>
     <div class="field-notes-box">
       <div class="fn-header">
-        Hard-won lessons from real DPI implementations — not found in any framework document.
+        Hard-won lessons from real DPI implementations · not found in any framework document.
         Contributed by practitioners with field experience in UNICEF, UNDP, and national government deployments.
       </div>
       <ul>
         <li>
-          <div class="fn-icon"><i class="fa-solid fa-wifi"></i></div>
-          <div><strong>Infrastructure before applications</strong> — lightweight tools outperform complex HMIS in fragile states.</div>
+          <div class="fn-icon"><i aria-hidden="true" class="fa-solid fa-wifi"></i></div>
+          <div><strong>Infrastructure before applications</strong> · lightweight tools outperform complex HMIS in fragile states.</div>
         </li>
         <li>
-          <div class="fn-icon"><i class="fa-solid fa-handshake"></i></div>
-          <div><strong>Ministry buy-in is the bottleneck</strong> — stakeholder alignment takes months, not weeks.</div>
+          <div class="fn-icon"><i aria-hidden="true" class="fa-solid fa-handshake"></i></div>
+          <div><strong>Ministry buy-in is the bottleneck</strong> · stakeholder alignment takes months, not weeks.</div>
         </li>
         <li>
-          <div class="fn-icon"><i class="fa-solid fa-key"></i></div>
-          <div><strong>Consistent identifiers from day one</strong> — cycle ID mismatches break cross-system reporting.</div>
+          <div class="fn-icon"><i aria-hidden="true" class="fa-solid fa-key"></i></div>
+          <div><strong>Consistent identifiers from day one</strong> · cycle ID mismatches break cross-system reporting.</div>
         </li>
         <li>
-          <div class="fn-icon"><i class="fa-solid fa-person-chalkboard"></i></div>
-          <div><strong>People first, always</strong> — Human-Centered Design (HCD) is not optional. Run user research before writing a single requirement. The focal point filling in a form at 3G speed in a municipal office is your primary user, not the minister who will see the dashboard.</div>
+          <div class="fn-icon"><i aria-hidden="true" class="fa-solid fa-person-chalkboard"></i></div>
+          <div><strong>People first, always</strong> · Human-Centered Design (HCD) is not optional. Run user research before writing a single requirement. The focal point filling in a form at 3G speed in a municipal office is your primary user, not the minister who will see the dashboard.</div>
         </li>
         <li>
-          <div class="fn-icon"><i class="fa-solid fa-map"></i></div>
-          <div><strong>Service blueprints before system design</strong> — map the as-is service end-to-end before touching any technology. A one-day workshop with frontline staff reveals more than a month of requirements documents.</div>
+          <div class="fn-icon"><i aria-hidden="true" class="fa-solid fa-map"></i></div>
+          <div><strong>Service blueprints before system design</strong> · map the as-is service end-to-end before touching any technology. A one-day workshop with frontline staff reveals more than a month of requirements documents.</div>
         </li>
         <li>
-          <div class="fn-icon"><i class="fa-solid fa-route"></i></div>
-          <div><strong>User journeys expose the real pain</strong> — walk the user journey for each persona. The to-be journey is your north star. Every technical decision should map back to it.</div>
+          <div class="fn-icon"><i aria-hidden="true" class="fa-solid fa-route"></i></div>
+          <div><strong>User journeys expose the real pain</strong> · walk the user journey for each persona. The to-be journey is your north star. Every technical decision should map back to it.</div>
         </li>
         <li>
-          <div class="fn-icon"><i class="fa-solid fa-sitemap"></i></div>
-          <div><strong>TOGAF helps frame the architecture conversation</strong> — even a lightweight ADM (business → data → application → technology) stops teams from jumping straight to tools.</div>
+          <div class="fn-icon"><i aria-hidden="true" class="fa-solid fa-sitemap"></i></div>
+          <div><strong>TOGAF helps frame the architecture conversation</strong> · even a lightweight ADM (business → data → application → technology) stops teams from jumping straight to tools.</div>
         </li>
         <li>
-          <div class="fn-icon"><i class="fa-solid fa-signal"></i></div>
-          <div><strong>Design offline-first, not offline-compatible</strong> — offline-first means every interaction was designed assuming no connectivity. The last-mile problem is political, not technical. Degrade gracefully: offline collection, async sync, SMS fallback, paper backup.</div>
+          <div class="fn-icon"><i aria-hidden="true" class="fa-solid fa-signal"></i></div>
+          <div><strong>Design offline-first, not offline-compatible</strong> · offline-first means every interaction was designed assuming no connectivity. The last-mile problem is political, not technical. Degrade gracefully: offline collection, async sync, SMS fallback, paper backup.</div>
         </li>
         <li>
-          <div class="fn-icon"><i class="fa-solid fa-helicopter"></i></div>
-          <div><strong>Drones, AgriTech, and AI follow the same rule</strong> — the question is never "is this technology exciting?" It is "does this solve a real problem and can it be maintained by the people who inherit it?" Most AI failures in development contexts are data failures, not model failures.</div>
+          <div class="fn-icon"><i aria-hidden="true" class="fa-solid fa-helicopter"></i></div>
+          <div><strong>Drones, AgriTech, and AI follow the same rule</strong> · the question is never "is this technology exciting?" It is "does this solve a real problem and can it be maintained by the people who inherit it?" Most AI failures in development contexts are data failures, not model failures.</div>
         </li>
         <li>
-          <div class="fn-icon"><i class="fa-solid fa-scale-balanced"></i></div>
-          <div><strong>The digital divide is replicating, not closing</strong> — the AI divide compounds this: countries without clean, governed data cannot use AI-enhanced public services. Gender is a design variable, not a disclaimer. Build for the hardest-to-reach user first.</div>
+          <div class="fn-icon"><i aria-hidden="true" class="fa-solid fa-scale-balanced"></i></div>
+          <div><strong>The digital divide is replicating, not closing</strong> · the AI divide compounds this: countries without clean, governed data cannot use AI-enhanced public services. Gender is a design variable, not a disclaimer. Build for the hardest-to-reach user first.</div>
         </li>
       </ul>
       <a class="fn-more"
-         href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#%EF%B8%8F-field-notes--real-implementation-insights">
-        Read all field notes <i class="fa-solid fa-arrow-right"></i>
+         href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure#field-notes">
+        Read all field notes <i aria-hidden="true" class="fa-solid fa-arrow-right"></i>
       </a>
     </div>
   </section>
@@ -1291,11 +1317,11 @@
 <div class="contribute-strip">
   <div class="contribute-strip-inner">
     <div>
-      <h2><i class="fa-solid fa-code-pull-request"></i> Contribute</h2>
+      <h2>Contribute</h2>
       <p>Know a DPG, framework, or implementation that should be here? Open an issue or submit a pull request.</p>
     </div>
     <a class="btn btn-yellow" href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure/issues/new/choose">
-      <i class="fa-solid fa-plus"></i> Add a Resource
+      <i aria-hidden="true" class="fa-solid fa-plus"></i> Add a Resource
     </a>
   </div>
 </div>
@@ -1310,18 +1336,18 @@
         <a href="https://github.com/paulo-amaral/awesome-digital-public-infrastructure/blob/main/CONTRIBUTING.md">Contribute</a> &nbsp;·&nbsp;
         <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 License</a>
       </div>
-      <div style="font-size:0.76rem;opacity:0.55;">
-        <i class="fa-brands fa-font-awesome"></i> Icons: Font Awesome &nbsp;·&nbsp;
+      <div style="font-size:0.76rem;opacity:0.85;">
+        <i aria-hidden="true" class="fa-brands fa-font-awesome"></i> Icons: Font Awesome &nbsp;·&nbsp;
         DPGs certified by <a href="https://digitalpublicgoods.net">DPGA</a>
       </div>
     </div>
     <div style="text-align:right;">
-      <div style="margin-bottom:6px;font-size:0.78rem;opacity:0.7;">Design system</div>
+      <div style="margin-bottom:6px;font-size:0.78rem;opacity:0.9;">Design system</div>
       <a href="https://brand.estonia.ee" target="_blank" rel="noopener"
          style="display:inline-flex;align-items:center;gap:8px;color:var(--yellow);font-weight:700;font-size:0.85rem;text-decoration:none;">
         🇪🇪 Brand Estonia
       </a>
-      <div style="font-size:0.72rem;opacity:0.5;margin-top:4px;">
+      <div style="font-size:0.72rem;opacity:0.8;margin-top:4px;">
         Aino typeface · Estonian colour palette<br>
         <a href="https://toolbox.estonia.ee" target="_blank" rel="noopener">toolbox.estonia.ee</a>
       </div>

@@ -1,6 +1,6 @@
-# ⚠️ Field Notes — Common Mistakes
+# ⚠️ Field Notes - Common Mistakes
 
-> The patterns that derail DPI projects — and how to avoid them.
+> The patterns that derail DPI projects - and how to avoid them.
 
 ---
 
@@ -11,7 +11,7 @@
 | **No sustainability plan** | System dies when the donor project ends | Budget for operations before features |
 | **Interoperability as an afterthought** | Two systems that can't talk to each other | Design the integration architecture first |
 | **Collecting data without governance** | Data piles up with no privacy framework | Governance before collection |
-| **Copying India Stack** | Assuming what worked at 1.4B scale fits a country of 1.3M | Adapt to local context — legal, political, and capacity |
+| **Copying India Stack** | Assuming what worked at 1.4B scale fits a country of 1.3M | Adapt to local context - legal, political, and capacity |
 
 ---
 
